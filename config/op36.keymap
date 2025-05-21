@@ -152,7 +152,7 @@
             bindings = <
   &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
   &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-  &tog 1  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
                           &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
@@ -161,17 +161,17 @@
             bindings = <
   &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
   &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-  &tog 2  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
                           &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
 
         Button {
             bindings = <
-  &kp LC(Z)  &kp LC(X)             &kp LC(C)                &kp LC(V)                 &kp LC(Y)                        &kp LC(Y)  &kp LC(V)                 &kp LC(C)                &kp LC(X)             &kp LC(Z)
-  &kp LGUI   &mt LALT BSPC         &mt LCTRL ENTER          &mt LSHIFT DEL            &none                            &none      &mt RSHFT DEL             &mt RCTRL ENTER          &mt RALT BSPC         &kp RGUI
-  &trans     &mt LA(LS(LGUI)) ESC  &mt LA(LS(LCTRL)) SPACE  &mt LS(LA(LC(LGUI))) TAB  &none                            &none      &mt RS(RA(RC(RGUI))) TAB  &mt RA(RS(RCTRL)) SPACE  &mt RA(RS(RGUI)) ESC  &trans
-                                                            &mkp MB3                  &mkp MB1   &mkp MB2    &mkp MB2  &mkp MB1   &mkp MB3
+  &kp K_UNDO  &kp K_CUT             &kp K_COPY               &kp K_PASTE               &kp K_AGAIN                        &kp K_AGAIN  &kp K_PASTE               &kp K_COPY               &kp K_CUT             &kp K_UNDO
+  &kp LGUI    &mt LALT BSPC         &mt LCTRL ENTER          &mt LSHIFT DEL            &none                              &none        &mt RSHFT DEL             &mt RCTRL ENTER          &mt RALT BSPC         &kp RGUI
+  &trans      &mt LA(LS(LGUI)) ESC  &mt LA(LS(LCTRL)) SPACE  &mt LS(LA(LC(LGUI))) TAB  &none                              &none        &mt RS(RA(RC(RGUI))) TAB  &mt RA(RS(RCTRL)) SPACE  &mt RA(RS(RGUI)) ESC  &trans
+                                                             &mkp MB3                  &mkp MB1     &mkp MB2    &mkp MB2  &mkp MB1     &mkp MB3
             >;
         };
 
@@ -186,16 +186,16 @@
 
         Nav {
             bindings = <
-  &dtboot   &dttap    &dtextra   &dtbase     &none                        &kp LC(Y)  &kp LC(V)      &kp LC(C)    &kp LC(X)  &kp LC(Z)
-  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHIFT  &none                        &kp LEFT   &kp DOWN       &kp UP       &kp RIGHT  &kp CAPS
-  &none     &none     &dtnum     &dtnav      &none                        &kp HOME   &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &kp INS
-                                 &trans      &trans  &trans    &kp ENTER  &kp BSPC   &kp DEL
+  &dtboot   &dttap    &dtextra   &dtbase     &none                        &kp K_AGAIN  &kp K_PASTE    &kp K_COPY   &kp K_CUT  &kp K_UNDO
+  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHIFT  &none                        &kp LEFT     &kp DOWN       &kp UP       &kp RIGHT  &kp CAPS
+  &none     &none     &dtnum     &dtnav      &none                        &kp HOME     &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &kp INS
+                                 &trans      &trans  &trans    &kp ENTER  &kp BSPC     &kp DEL
             >;
         };
 
         Mouse {
             bindings = <
-  &dtboot   &dttap    &dtextra   &dtbase     &none                       &kp LC(Y)       &kp LC(V)       &kp LC(C)     &kp LC(X)        &kp LC(Z)
+  &dtboot   &dttap    &dtextra   &dtbase     &none                       &kp K_AGAIN     &kp K_PASTE     &kp K_COPY    &kp K_CUT        &kp K_UNDO
   &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHIFT  &none                       &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &none
   &none     &none     &dtsym     &dtmouse    &none                       &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &none
                                  &trans      &trans  &trans    &mkp MB2  &mkp MB1        &mkp MB3
