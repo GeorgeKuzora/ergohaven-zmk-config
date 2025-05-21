@@ -12,6 +12,11 @@
     require-prior-idle-ms = <125>;
 };
 
+&lt {
+    require-prior-idle-ms = <125>;
+    quick-tap-ms = <200>;
+};
+
 / {
     behaviors {
         hml: home_row_mod_left {
