@@ -1,5 +1,4 @@
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
@@ -16,6 +15,8 @@
     require-prior-idle-ms = <125>;
     quick-tap-ms = <200>;
 };
+
+&soft_off { hold-time-ms = <3000>; };
 
 / {
     behaviors {
@@ -49,15 +50,6 @@
             compatible = "zmk,behavior-mod-morph";
             label = "Bluetooth output (shift mod)";
             bindings = <&out OUT_TOG>, <&out OUT_USB>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
-        };
-
-        epw: external_power {
-            compatible = "zmk,behavior-mod-morph";
-            label = "External power (shift mod)";
-            bindings = <&ext_power EP_TOG>, <&ext_power EP_OFF>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
@@ -132,6 +124,15 @@
             #binding-cells = <0>;
             bindings = <&none>, <&to 9>;
         };
+
+        dtepw: dt_epw {
+            compatible = "zmk,behavior-mod-morph";
+            label = "External power (Shift behavior)";
+            bindings = <&ext_power EP_TOG>, <&ext_power EP_OFF>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
     };
 
     combos { compatible = "zmk,combos"; };
@@ -177,9 +178,9 @@
 
         Media {
             bindings = <
-  &dtboot   &dttap    &dtextra   &dtbase    &none                         &bt BT_CLR    &bl BL_DEC    &bl BL_INC    &bl BL_TOG    &studio_unlock
-  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none                         &kp C_PREV    &kp C_VOL_DN  &kp C_VOL_UP  &kp C_NEXT    &epw
-  &none     &none     &dtfun     &dtmedia   &none                         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bot
+  &dtboot   &dttap    &dtextra   &dtbase    &none                         &out OUT_USB  &out OUT_BLE  &none         &studio_unlock  &soft_off
+  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none                         &kp C_PREV    &kp C_VOL_DN  &kp C_VOL_UP  &kp C_NEXT      &dtepw
+  &none     &none     &dtfun     &dtmedia   &none                         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_CLR
                                  &trans     &trans  &trans    &kp C_STOP  &kp C_PP      &kp C_MUTE
             >;
         };
@@ -222,10 +223,10 @@
 
         Fun {
             bindings = <
-  &kp F12  &kp F7  &kp F8  &kp F9     &kp PSCRN                           &none   &dtbase    &dtextra   &dttap    &dtboot
-  &kp F11  &kp F4  &kp F5  &kp F6     &kp SLCK                            &none   &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI
-  &kp F10  &kp F1  &kp F2  &kp F3     &kp PAUSE_BREAK                     &none   &dtfun     &dtmedia   &none     &none
-                           &kp GLOBE  &kp SPACE        &kp TAB    &trans  &trans  &trans
+  &kp F12  &kp F7  &kp F8  &kp F9      &kp PSCRN                           &none   &dtbase    &dtextra   &dttap    &dtboot
+  &kp F11  &kp F4  &kp F5  &kp F6      &kp SLCK                            &none   &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI
+  &kp F10  &kp F1  &kp F2  &kp F3      &kp PAUSE_BREAK                     &none   &dtfun     &dtmedia   &none     &none
+                           &kp K_MENU  &kp SPACE        &kp TAB    &trans  &trans  &trans
             >;
         };
     };
