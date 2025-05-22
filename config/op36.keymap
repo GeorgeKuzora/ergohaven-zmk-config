@@ -129,18 +129,18 @@
 
         Button {
             bindings = <
-  &kp K_UNDO  &kp K_CUT      &kp K_COPY               &kp K_PASTE               &kp K_AGAIN                        &kp K_AGAIN  &kp K_PASTE               &kp K_COPY               &kp K_CUT      &kp K_UNDO
-  &kp LGUI    &mt LALT BSPC  &mt LCTRL ENTER          &mt LSHIFT DEL            &none                              &none        &mt RSHFT DEL             &mt RCTRL ENTER          &mt RALT BSPC  &kp RGUI
-  &trans      &kp ESC        &mt LA(LS(LCTRL)) SPACE  &mt LS(LA(LC(LGUI))) TAB  &none                              &none        &mt RS(RA(RC(RGUI))) TAB  &mt RA(RS(RCTRL)) SPACE  &kp ESC        &trans
+  &kp K_UNDO  &kp K_CUT      &kp K_COPY               &kp K_PASTE               &kp K_AGAIN                        &kp K_AGAIN  &kp K_PASTE               &kp K_COPY               &kp K_CUT     &kp K_UNDO
+  &kp LGUI    &mt LALT BSPC  &mt LCTRL ENTER          &mt LSHIFT DEL            &none                              &none        &mt RSHFT BSPC            &mt RCTRL ENTER          &mt RALT DEL  &kp RGUI
+  &trans      &kp ESC        &mt LA(LS(LCTRL)) SPACE  &mt LS(LA(LC(LGUI))) TAB  &none                              &none        &mt RS(RA(RC(RGUI))) TAB  &mt RA(RS(RCTRL)) SPACE  &kp ESC       &trans
                                                       &mkp MB3                  &mkp MB1     &mkp MB2    &mkp MB2  &mkp MB1     &mkp MB3
             >;
         };
 
         Media {
             bindings = <
-  &dtboot   &dttap    &dtextra   &dtbase    &none                         &bt BT_CLR    &out OUT_BLE  &out OUT_USB  &studio_unlock  &soft_off
-  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none                         &kp C_PREV    &kp C_VOL_DN  &kp C_VOL_UP  &kp C_NEXT      &kp F23
-  &none     &none     &none      &to 9      &none                         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bot
+  &dtboot   &dttap    &dtextra   &dtbase    &none                         &bt BT_CLR    &bot          &soft_off     &studio_unlock  &kp F21
+  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none                         &kp C_PREV    &kp C_VOL_DN  &kp C_VOL_UP  &kp C_NEXT      &kp F22
+  &none     &none     &none      &to 9      &none                         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &kp F23
                                  &trans     &trans  &trans    &kp C_STOP  &kp C_PP      &kp C_MUTE
             >;
         };
