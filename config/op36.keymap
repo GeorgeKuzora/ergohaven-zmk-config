@@ -138,10 +138,10 @@
 
         Media {
             bindings = <
-  &dtboot           &dttap            &dtextra        &dtbase            &none                         &bt BT_CLR    &bot          &soft_off     &studio_unlock  &kp F15
-  &kp LGUI          &kp LALT          &kp LCTRL       &kp LSHFT          &none                         &kp C_PREV    &kp C_VOL_DN  &kp C_VOL_UP  &kp C_NEXT      &kp LG(SPACE)
-  &kp LC(LS(LEFT))  &kp LS(LC(DOWN))  &kp LS(LC(UP))  &kp LS(LC(RIGHT))  &to 9                         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &kp F14
-                                                      &trans             &trans  &trans    &kp C_STOP  &kp C_PP      &kp C_MUTE
+  &dtboot           &dttap            &dtextra        &dtbase            &to 9                                         &bt BT_CLR    &bot          &soft_off     &studio_unlock  &kp F15
+  &kp LGUI          &kp LALT          &kp LCTRL       &kp LSHFT          &kp LS(LA(LC(LG(N7))))                        &kp C_PREV    &kp C_VOL_DN  &kp C_VOL_UP  &kp C_NEXT      &kp LG(SPACE)
+  &kp LC(LS(LEFT))  &kp LS(LC(DOWN))  &kp LS(LC(UP))  &kp LS(LC(RIGHT))  &kp LS(LA(LC(LG(N8))))                        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &kp F14
+                                                      &trans             &trans                  &trans    &kp C_STOP  &kp C_PP      &kp C_MUTE
             >;
         };
 
@@ -183,10 +183,10 @@
 
         Fun {
             bindings = <
-  &kp F12  &kp F7  &kp F8  &kp F9         &kp PSCRN                           &none   &dtbase            &dtextra           &dttap             &dtboot
-  &kp F11  &kp F4  &kp F5  &kp F6         &kp SLCK                            &none   &kp RSHFT          &kp RCTRL          &kp RALT           &kp RGUI
-  &kp F10  &kp F1  &kp F2  &kp F3         &kp PAUSE_BREAK                     &to 4   &kp LS(LA(LC(H)))  &kp LS(LA(LC(K)))  &kp LS(LA(LC(I)))  &kp LS(LA(LC(L)))
-                           &kp LA(SPACE)  &kp SPACE        &kp TAB    &trans  &trans  &trans
+  &kp F12  &kp F7  &kp F8  &kp F9         &kp PSCRN                           &to 4                   &dtbase            &dtextra           &dttap             &dtboot
+  &kp F11  &kp F4  &kp F5  &kp F6         &kp SLCK                            &kp LS(LA(LC(LG(N9))))  &kp RSHFT          &kp RCTRL          &kp RALT           &kp RGUI
+  &kp F10  &kp F1  &kp F2  &kp F3         &kp PAUSE_BREAK                     &kp LS(LA(LC(LG(N0))))  &kp LS(LA(LC(H)))  &kp LS(LA(LC(K)))  &kp LS(LA(LC(I)))  &kp LS(LA(LC(L)))
+                           &kp LA(SPACE)  &kp SPACE        &kp TAB    &trans  &trans                  &trans
             >;
         };
     };
