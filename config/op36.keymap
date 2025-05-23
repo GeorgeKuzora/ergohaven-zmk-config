@@ -158,7 +158,7 @@
             bindings = <
   &dtboot               &dttap                &dtextra            &dtbase                &to 7                                       &kp K_AGAIN     &kp K_PASTE     &kp K_COPY    &kp K_CUT        &kp K_UNDO
   &kp LGUI              &kp LALT              &kp LCTRL           &kp LSHIFT             &kp LS(LA(LC(LG(N1))))                      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &kp F17
-  &kp LS(LC(LA(LEFT)))  &kp LS(LA(LC(DOWN)))  &kp LS(LA(LC(UP)))  &kp LA(LC(LG(RIGHT)))  &kp LS(LA(LC(LG(N2))))                      &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &kp F16
+  &kp LS(LC(LA(LEFT)))  &kp LS(LA(LC(DOWN)))  &kp LS(LA(LC(UP)))  &kp LA(LC(LS(RIGHT)))  &kp LS(LA(LC(LG(N2))))                      &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &kp F16
                                                                   &trans                 &trans                  &trans    &mkp MB2  &mkp MB1        &mkp MB3
             >;
         };
