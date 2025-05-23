@@ -165,10 +165,10 @@
 
         Sym {
             bindings = <
-  &kp LBRC   &kp AMPS  &kp STAR   &kp LPAR   &kp RBRC                       &none   &dtbase                   &dtextra               &dttap                 &dtboot
-  &kp DQT    &kp DLLR  &kp PRCNT  &kp CARET  &kp PLUS                       &none   &kp RSHFT                 &kp RCTRL              &kp RALT               &kp RGUI
-  &kp TILDE  &kp EXCL  &kp AT     &kp HASH   &kp PIPE                       &to 6   &kp LS(LA(LC(LG(BSPC))))  &kp LS(LA(LG(LC(P))))  &kp LS(LA(LC(LG(F))))  &kp LS(LA(LC(LG(S))))
-                                  &kp LPAR   &kp RPAR  &kp UNDER    &trans  &trans  &trans
+  &kp LBRC   &kp AMPS  &kp STAR   &kp LPAR   &kp RBRC                       &to 6                   &dtbase                   &dtextra               &dttap                 &dtboot
+  &kp DQT    &kp DLLR  &kp PRCNT  &kp CARET  &kp PLUS                       &kp LS(LA(LC(LG(N3))))  &kp RSHFT                 &kp RCTRL              &kp RALT               &kp RGUI
+  &kp TILDE  &kp EXCL  &kp AT     &kp HASH   &kp PIPE                       &kp LS(LA(LC(LG(N4))))  &kp LS(LA(LC(LG(BSPC))))  &kp LS(LA(LG(LC(P))))  &kp LS(LA(LC(LG(F))))  &kp LS(LA(LC(LG(S))))
+                                  &kp LPAR   &kp RPAR  &kp UNDER    &trans  &trans                  &trans
             >;
         };
 
