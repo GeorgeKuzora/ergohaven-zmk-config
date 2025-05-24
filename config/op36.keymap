@@ -183,10 +183,10 @@
 
         Fun {
             bindings = <
-  &kp F12  &kp F7  &kp F8  &kp F9         &kp PSCRN                           &to 4                   &dtbase            &dtextra           &dttap             &dtboot
-  &kp F11  &kp F4  &kp F5  &kp F6         &kp SLCK                            &kp LS(LA(LC(LG(N9))))  &kp RSHFT          &kp RCTRL          &kp RALT           &kp RGUI
-  &kp F10  &kp F1  &kp F2  &kp F3         &kp PAUSE_BREAK                     &kp LS(LA(LC(LG(N0))))  &kp LS(LA(LC(H)))  &kp LS(LA(LC(K)))  &kp LS(LA(LC(I)))  &kp LS(LA(LC(L)))
-                           &kp LA(SPACE)  &kp SPACE        &kp TAB    &trans  &trans                  &trans
+  &kp F12  &kp F7  &kp F8  &kp F9         &kp PSCRN                                    &to 4                   &dtbase            &dtextra           &dttap             &dtboot
+  &kp F11  &kp F4  &kp F5  &kp F6         &kp SLCK                                     &kp LS(LA(LC(LG(N9))))  &kp RSHFT          &kp RCTRL          &kp RALT           &kp RGUI
+  &kp F10  &kp F1  &kp F2  &kp F3         &kp PAUSE_BREAK                              &kp LS(LA(LC(LG(N0))))  &kp LS(LA(LC(H)))  &kp LS(LA(LC(K)))  &kp LS(LA(LC(I)))  &kp LS(LA(LC(L)))
+                           &kp LA(SPACE)  &kp SPACE        &ext_power EP_ON    &trans  &trans                  &trans
             >;
         };
     };
