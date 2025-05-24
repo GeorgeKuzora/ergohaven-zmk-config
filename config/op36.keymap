@@ -129,9 +129,9 @@
 
         Button {
             bindings = <
-  &kp K_UNDO                 &kp K_CUT      &kp K_COPY               &kp K_PASTE               &kp K_AGAIN                                      &kp K_AGAIN                &kp K_PASTE               &kp K_COPY               &kp K_CUT     &kp K_UNDO
-  &kp LGUI                   &mt LALT BSPC  &mt LCTRL ENTER          &mt LSHIFT DEL            &kp LS(LA(LC(LG(SQT))))                          &kp LS(LA(LC(LG(SEMI))))   &mt RSHFT BSPC            &mt RCTRL ENTER          &mt RALT DEL  &kp RGUI
-  &kp LS(LA(LC(LG(GRAVE))))  &kp ESC        &mt LA(LS(LCTRL)) SPACE  &mt LS(LA(LC(LGUI))) TAB  &kp LS(LA(LC(LG(MINUS))))                        &kp LA(LC(LS(LG(EQUAL))))  &mt RS(RA(RC(RGUI))) TAB  &mt RA(RS(RCTRL)) SPACE  &kp ESC       &kp LS(LA(LC(LG(BSLH))))
+  &kp K_UNDO                 &kp K_CUT      &kp K_COPY               &kp K_PASTE               &kp K_AGAIN                                      &kp K_AGAIN                &kp K_PASTE               &kp K_COPY               &kp K_CUT      &kp K_UNDO
+  &kp LGUI                   &mt LALT BSPC  &mt LCTRL ENTER          &mt LSHIFT DEL            &kp LS(LA(LC(LG(SQT))))                          &kp LS(LA(LC(LG(SEMI))))   &mt RSHFT BSPC            &mt RCTRL ENTER          &mt RALT DEL   &kp RGUI
+  &kp LS(LA(LC(LG(GRAVE))))  &mt LCTRL ESC  &mt LA(LS(LCTRL)) SPACE  &mt LS(LA(LC(LGUI))) TAB  &kp LS(LA(LC(LG(MINUS))))                        &kp LA(LC(LS(LG(EQUAL))))  &mt RS(RA(RC(RGUI))) TAB  &mt RA(RS(RCTRL)) SPACE  &mt RCTRL ESC  &kp LS(LA(LC(LG(BSLH))))
                                                                      &mkp MB3                  &mkp MB1                   &mkp MB2    &mkp MB2  &mkp MB1                   &mkp MB3
             >;
         };
