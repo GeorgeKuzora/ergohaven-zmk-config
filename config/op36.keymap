@@ -125,6 +125,67 @@
             #binding-cells = <0>;
             bindings = <&none>, <&tog 9>;
         };
+
+        gquote: gquote {
+            compatible = "zmk,behavior-mod-morph";
+            label = "GQUOTE";
+            bindings = <&kp SQT>, <&kp UNDER>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_LCTL|MOD_LALT|MOD_LGUI|MOD_RCTL|MOD_RALT|MOD_RGUI)>;
+        };
+
+        gdot: gdot {
+            compatible = "zmk,behavior-mod-morph";
+            label = "GDOT";
+            bindings = <&kp DOT>, <&kp GT>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_LCTL|MOD_LALT|MOD_LGUI|MOD_RCTL|MOD_RALT|MOD_RGUI)>;
+        };
+
+        gminus: gminus {
+            compatible = "zmk,behavior-mod-morph";
+            label = "GMINUS";
+            bindings = <&kp MINUS>, <&kp DQT>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_LCTL|MOD_LALT|MOD_LGUI|MOD_RCTL|MOD_RALT|MOD_RGUI)>;
+        };
+
+        gslash: gslash {
+            compatible = "zmk,behavior-mod-morph";
+            label = "GSLASH";
+            bindings = <&kp SLASH>, <&kp LT>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_LCTL|MOD_LGUI|MOD_LALT|MOD_RCTL|MOD_RALT|MOD_RGUI)>;
+        };
+
+        gcomma: gcomma {
+            compatible = "zmk,behavior-mod-morph";
+            label = "GCOMMA";
+            bindings = <&kp COMMA>, <&kp QMARK>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_LCTL|MOD_LALT|MOD_LGUI|MOD_RCTL|MOD_RALT|MOD_RGUI)>;
+        };
+
+        gbutton_gslash: gbutton_gslash {
+            compatible = "zmk,behavior-hold-tap";
+            label = "GBUTTON_GSLASH";
+            bindings = <&mo>, <&gslash>;
+
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            require-prior-idle-ms = <100>;
+        };
     };
 
     combos { compatible = "zmk,combos"; };
@@ -143,10 +204,10 @@
 
         Extra {
             bindings = <
-  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-                          &trans  &trans  &trans    &trans  &trans  &trans
+  &kp B        &kp L        &kp D         &kp W         &kp Z                                   &gquote      &kp F         &kp O         &kp J        &kp SEMI
+  &hml LGUI N  &hml LALT R  &hml LCTRL T  &hml LSHFT S  &kp G                                   &kp Y        &hmr RSHFT H  &hmr RCTRL A  &hmr RALT E  &hmr RGUI I
+  &lt 3 Q      &kp X        &kp M         &kp C         &kp V                                   &kp K        &kp P         &gdot         &gminus      &gbutton_gslash 3 0
+                                          &lt 4 ESC     &lt 5 SPACE  &lt 6 TAB    &lt 10 ENTER  &lt 11 BSPC  &lt 9 DEL
             >;
         };
 
@@ -219,6 +280,24 @@
   &kp F11  &kp F4  &kp F5  &kp F6         &kp SLCK                            &none   &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI
   &kp F10  &kp F1  &kp F2  &kp F3         &kp PAUSE_BREAK                     &none   &dtfun     &dtmedia   &none     &none
                            &kp LA(SPACE)  &kp SPACE        &kp TAB    &trans  &trans  &trans
+            >;
+        };
+
+        gSym {
+            bindings = <
+  &kp LBRC   &kp AMPS  &kp STAR   &kp LPAR   &kp RBRC                       &none   &dtbase    &dtextra   &dttap    &dtboot
+  &kp QMARK  &kp DLLR  &kp PRCNT  &kp CARET  &kp PLUS                       &none   &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI
+  &kp TILDE  &kp EXCL  &kp AT     &kp HASH   &kp PIPE                       &none   &dtsym     &dtmouse   &none     &none
+                                  &kp LPAR   &kp RPAR  &kp UNDER    &trans  &trans  &trans
+            >;
+        };
+
+        gNum {
+            bindings = <
+  &kp LBKT   &kp N7  &kp N8  &kp N9   &kp RBKT                        &none   &dtbase     &dtextra   &dttap    &dtboot
+  &gcomma    &kp N4  &kp N5  &kp N6   &kp EQUAL                       &none   &kp RSHIFT  &kp RCTRL  &kp RALT  &kp RGUI
+  &kp GRAVE  &kp N1  &kp N2  &kp N3   &kp BSLH                        &none   &dtnum      &dtnav     &none     &none
+                             &kp DOT  &kp N0     &kp MINUS    &trans  &trans  &trans
             >;
         };
     };
