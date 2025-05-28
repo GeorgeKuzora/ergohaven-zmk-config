@@ -107,6 +107,13 @@
 
             label = "EN";
         };
+
+        toggle_ruen: toggle_ruen {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp F17>;
+            label = "TOGGLE_RUEN";
+        };
     };
 
     keymap {
