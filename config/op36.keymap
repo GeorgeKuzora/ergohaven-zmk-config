@@ -86,42 +86,42 @@
 
         dtmedia: dtmedia {
             compatible = "zmk,behavior-tap-dance";
-            label = "DTMEDIA";
+            label = "Double tap Media layer";
             #binding-cells = <0>;
             bindings = <&none>, <&tog 4>;
         };
 
         dtnav: dtnav {
             compatible = "zmk,behavior-tap-dance";
-            label = "DTNAV";
+            label = "Double tap Nav layer";
             #binding-cells = <0>;
             bindings = <&none>, <&tog 5>;
         };
 
         dtmouse: dtmouse {
             compatible = "zmk,behavior-tap-dance";
-            label = "DTMOUSE";
+            label = "Double tap Mouse layer";
             #binding-cells = <0>;
             bindings = <&none>, <&tog 6>;
         };
 
         dtsym: dtsym {
             compatible = "zmk,behavior-tap-dance";
-            label = "DTSYM";
+            label = "Double tap Sym layer";
             #binding-cells = <0>;
             bindings = <&none>, <&tog 7>;
         };
 
         dtnum: dtnum {
             compatible = "zmk,behavior-tap-dance";
-            label = "DTNUM";
+            label = "Double tap Num layer";
             #binding-cells = <0>;
             bindings = <&none>, <&tog 8>;
         };
 
         dtfun: dtfun {
             compatible = "zmk,behavior-tap-dance";
-            label = "DTFUN";
+            label = "Double tap Fun layer";
             #binding-cells = <0>;
             bindings = <&none>, <&tog 9>;
         };
