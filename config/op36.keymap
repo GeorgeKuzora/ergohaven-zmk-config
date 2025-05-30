@@ -319,10 +319,10 @@
 
         Rus {
             bindings = <
-  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-                          &trans  &trans  &trans    &trans  &trans  &trans
+  &trans  &trans  &trans  &trans     &trans                                  &trans       &trans      &trans  &trans  &trans
+  &trans  &trans  &trans  &trans     &trans                                  &trans       &trans      &trans  &trans  &trans
+  &trans  &trans  &trans  &trans     &trans                                  &trans       &trans      &trans  &trans  &trans
+                          &lt 5 ESC  &lt 6 SPACE  &lt 7 TAB    &lt 13 ENTER  &lt 14 BSPC  &lt 10 DEL
             >;
         };
 
