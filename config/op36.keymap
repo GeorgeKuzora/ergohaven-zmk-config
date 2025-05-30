@@ -215,6 +215,34 @@
             hold-trigger-on-release;
             label = "HMRW";
         };
+
+        dtgnum: dtgnum {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DTGNUM";
+            #binding-cells = <0>;
+            bindings = <&none>, <&tog 12>;
+        };
+
+        dtgsym: dtgsym {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DTGSYM";
+            #binding-cells = <0>;
+            bindings = <&none>, <&tog 11>;
+        };
+
+        dtrunum: dtrunum {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DTRUNUM";
+            #binding-cells = <0>;
+            bindings = <&none>, <&tog 14>;
+        };
+
+        dtrusym: dtrusym {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DTRUSYM";
+            #binding-cells = <0>;
+            bindings = <&none>, <&tog 13>;
+        };
     };
 
     combos { compatible = "zmk,combos"; };
@@ -367,7 +395,7 @@
             bindings = <
   &kp LBRC   &kp AMPS  &kp STAR   &kp LPAR   &kp RBRC                       &none   &dtbase    &dtextra   &dttap    &dtboot
   &kp QMARK  &kp DLLR  &kp PRCNT  &kp CARET  &kp PLUS                       &none   &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI
-  &kp TILDE  &kp EXCL  &kp AT     &kp HASH   &kp PIPE                       &none   &dtsym     &dtmouse   &none     &none
+  &kp TILDE  &kp EXCL  &kp AT     &kp HASH   &kp PIPE                       &none   &dtgsym    &dtmouse   &none     &none
                                   &kp LPAR   &kp RPAR  &kp COLON    &trans  &trans  &trans
             >;
         };
@@ -376,7 +404,7 @@
             bindings = <
   &kp LBKT   &kp N7  &kp N8  &kp N9   &kp RBKT                       &none   &dtbase     &dtextra   &dttap    &dtboot
   &gcomma    &kp N4  &kp N5  &kp N6   &kp EQUAL                      &none   &kp RSHIFT  &kp RCTRL  &kp RALT  &kp RGUI
-  &kp GRAVE  &kp N1  &kp N2  &kp N3   &kp BSLH                       &none   &dtnum      &dtnav     &none     &none
+  &kp GRAVE  &kp N1  &kp N2  &kp N3   &kp BSLH                       &none   &dtgnum     &dtnav     &none     &none
                              &kp DOT  &kp N0     &kp SEMI    &trans  &trans  &trans
             >;
         };
@@ -392,9 +420,9 @@
 
         ruNum {
             bindings = <
-  &kp RU_CYRILLIC_HA  &kp RU_N7  &kp RU_N8  &kp RU_N9   &kp RU_CYRILLIC_HARD_SIGN                          &trans  &trans  &trans  &trans  &trans
-  &kp RU_CYRILLIC_E   &kp RU_N4  &kp RU_N5  &kp RU_N6   &kp RU_EQUAL                                       &trans  &trans  &trans  &trans  &trans
-  &kp RU_CYRILLIC_IO  &kp RU_N1  &kp RU_N2  &kp RU_N3   &kp RU_BSLH                                        &trans  &trans  &trans  &trans  &trans
+  &kp RU_CYRILLIC_HA  &kp RU_N7  &kp RU_N8  &kp RU_N9   &kp RU_CYRILLIC_HARD_SIGN                          &none   &dtbase    &dtextra   &dttap    &dtboot
+  &kp RU_CYRILLIC_E   &kp RU_N4  &kp RU_N5  &kp RU_N6   &kp RU_EQUAL                                       &none   &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI
+  &kp RU_CYRILLIC_IO  &kp RU_N1  &kp RU_N2  &kp RU_N3   &kp RU_BSLH                                        &none   &dtrunum   &dtnav     &none     &none
                                             &kp RU_DOT  &kp RU_N0                  &kp RU_MINUS    &trans  &trans  &trans
             >;
         };
