@@ -411,9 +411,9 @@
 
         ruSym {
             bindings = <
-  &trans  &kp RU_CYRILLIC_TSE  &kp RU_CYRILLIC_U  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans               &trans             &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans               &trans             &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+  &trans  &kp RU_CYRILLIC_TSE  &kp RU_CYRILLIC_U  &trans  &trans                    &none   &dtbase    &dtextra   &dttap    &dtboot
+  &trans  &trans               &trans             &trans  &trans                    &none   &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI
+  &trans  &trans               &trans             &trans  &trans                    &none   &dtrusym   &dtmouse   &none     &none
                                                   &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
