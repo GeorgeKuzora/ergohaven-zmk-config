@@ -383,19 +383,19 @@
 
         ruSym {
             bindings = <
-  &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE  &kp RU_CYRILLIC_U  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-  &trans                   &trans               &trans             &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-  &trans                   &trans               &trans             &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-                                                                   &trans  &trans  &trans    &trans  &trans  &trans
+  &trans  &kp RU_CYRILLIC_TSE  &kp RU_CYRILLIC_U  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+  &trans  &trans               &trans             &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+  &trans  &trans               &trans             &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+                                                  &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
 
         ruNum {
             bindings = <
-  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-                          &trans  &trans  &trans    &trans  &trans  &trans
+  &kp RU_CYRILLIC_HA  &kp RU_N7  &kp RU_N8  &kp RU_N9   &kp RU_CYRILLIC_HARD_SIGN                          &trans  &trans  &trans  &trans  &trans
+  &kp RU_CYRILLIC_E   &kp RU_N4  &kp RU_N5  &kp RU_N6   &kp RU_EQUAL                                       &trans  &trans  &trans  &trans  &trans
+  &kp RU_CYRILLIC_IO  &kp RU_N1  &kp RU_N2  &kp RU_N3   &kp RU_BSLH                                        &trans  &trans  &trans  &trans  &trans
+                                            &kp RU_DOT  &kp RU_N0                  &kp RU_MINUS    &trans  &trans  &trans
             >;
         };
     };
