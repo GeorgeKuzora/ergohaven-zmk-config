@@ -243,27 +243,6 @@
             #binding-cells = <0>;
             bindings = <&none>, <&tog 13>;
         };
-
-        lten: lten {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LTEN";
-            bindings = <&lt>, <&en>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "tap-preferred";
-            require-prior-idle-ms = <100>;
-        };
-
-        rusbutton: rusbutton {
-            compatible = "zmk,behavior-mod-morph";
-            label = "RUSBUTTON";
-            bindings = <&lten 4 DOT>, <&lten 4 COMMA>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_LCTL|MOD_LALT|MOD_LGUI|MOD_RCTL|MOD_RALT|MOD_RGUI)>;
-        };
     };
 
     combos { compatible = "zmk,combos"; };
@@ -344,7 +323,7 @@
             bindings = <
   &kp RU_CYRILLIC_SHORT_I    &kp RU_CYRILLIC_TSE         &kp RU_CYRILLIC_U          &kp RU_CYRILLIC_KA        &kp RU_CYRILLIC_IE                             &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA        &kp RU_CYRILLIC_SHCHA     &kp RU_CYRILLIC_ZE
   &hmrw LGUI RU_CYRILLIC_EF  &hml LALT RU_CYRILLIC_YERU  &hml LCTRL RU_CYRILLIC_VE  &hml LSHFT RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                             &kp RU_CYRILLIC_ER  &hmr RSHFT RU_CYRILLIC_O   &hmr RCTRL RU_CYRILLIC_EL  &hmr RALT RU_CYRILLIC_DE  &hmrw RGUI RU_CYRILLIC_ZHE
-  &lt 4 RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE         &kp RU_CYRILLIC_ES         &kp RU_CYRILLIC_EM        &kp RU_CYRILLIC_I                              &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE         &kp RU_CYRILLIC_YU        &rusbutton
+  &lt 4 RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE         &kp RU_CYRILLIC_ES         &kp RU_CYRILLIC_EM        &kp RU_CYRILLIC_I                              &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE         &kp RU_CYRILLIC_YU        &lt 4 RU_CYRILLIC_E
                                                                                     &lt 5 ESC                 &lt 6 SPACE         &lt 7 TAB    &lt 13 ENTER  &lt 14 BSPC         &lt 10 DEL
             >;
         };
@@ -432,19 +411,19 @@
 
         ruSym {
             bindings = <
-  &kp LS(RU_CYRILLIC_HA)  &en SEMI     &en STAR   &en SQT      &kp LS(RU_CYRILLIC_HARD_SIGN)                          &en LBRC       &en LBKT   &en AMPS   &en RBKT  &en RBRC
-  &kp LS(RU_CYRILLIC_E)   &en COLON    &en PRCNT  &en DQT      &kp RU_PLUS                                            &kp RU_NUMERO  &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI
-  &kp LS(RU_CYRILLIC_IO)  &kp RU_EXCL  &en AT     &en HASH     &en QUESTION                                           &en DLLR       &dtrusym   &dtmouse   &en LT    &en GT
-                                                  &kp RU_LPAR  &kp RU_RIGHT_PARENTHESIS       &kp RU_UNDER    &trans  &trans         &trans
+  &kp LS(RU_CYRILLIC_HA)  &en AMPS     &en STAR   &kp LPAR   &kp LS(RU_CYRILLIC_HARD_SIGN)                          &kp LS(RU_CYRILLIC_IO)  &en LBRC   &en RBRC   &en QUESTION  &kp RU_NUMERO
+  &en DQT                 &en DLLR     &en PRCNT  &en CARET  &kp RU_PLUS                                            &en COLON               &kp RSHFT  &kp RCTRL  &kp RALT      &kp RGUI
+  &en TILDE               &kp RU_EXCL  &en AT     &en HASH   &en PIPE                                               &kp RU_SLASH            &dtrusym   &dtmouse   &en LT        &en GT
+                                                  &en COMMA  &kp RU_RIGHT_PARENTHESIS       &kp RU_UNDER    &trans  &trans                  &trans
             >;
         };
 
         ruNum {
             bindings = <
-  &kp RU_CYRILLIC_HA  &kp RU_N7  &kp RU_N8  &kp RU_N9   &kp RU_CYRILLIC_HARD_SIGN                          &en TILDE  &dtbase    &dtextra   &dttap       &dtboot
-  &kp RU_CYRILLIC_E   &kp RU_N4  &kp RU_N5  &kp RU_N6   &kp RU_EQUAL                                       &en GRAVE  &kp RSHFT  &kp RCTRL  &kp RALT     &kp RGUI
-  &kp RU_CYRILLIC_IO  &kp RU_N1  &kp RU_N2  &kp RU_N3   &en SLASH                                          &en CARET  &dtrunum   &dtnav     &kp RU_BSLH  &kp RU_SLASH
-                                            &kp RU_DOT  &kp RU_N0                  &kp RU_MINUS    &trans  &trans     &trans
+  &kp RU_CYRILLIC_HA  &kp RU_N7  &kp RU_N8  &kp RU_N9   &kp RU_CYRILLIC_HARD_SIGN                          &kp RU_CYRILLIC_IO  &en LBKT   &en RBKT   &en SLASH  &en HASH
+  &en SQT             &kp RU_N4  &kp RU_N5  &kp RU_N6   &kp RU_EQUAL                                       &en SEMI            &kp RSHFT  &kp RCTRL  &kp RALT   &kp RGUI
+  &en GRAVE           &kp RU_N1  &kp RU_N2  &kp RU_N3   &en BSLH                                           &kp RU_BSLH         &dtrunum   &dtnav     &en COMMA  &en DOT
+                                            &kp RU_DOT  &kp RU_N0                  &kp RU_MINUS    &trans  &trans              &trans
             >;
         };
     };
