@@ -330,9 +330,9 @@
 
         Button {
             bindings = <
-  &kp K_UNDO  &kp K_CUT      &kp K_COPY       &kp K_PASTE     &kp K_AGAIN                        &kp K_AGAIN  &kp K_PASTE     &kp K_COPY       &kp K_CUT     &kp K_UNDO
-  &kp LGUI    &mt LALT BSPC  &mt LCTRL ENTER  &mt LSHIFT DEL  &none                              &none        &mt RSHFT BSPC  &mt RCTRL ENTER  &mt RALT DEL  &kp RGUI
-  &trans      &kp ESC        &kp SPACE        &kp TAB         &none                              &none        &kp TAB         &kp SPACE        &kp ESC       &trans
+  &kp K_UNDO  &kp K_CUT      &kp K_COPY       &kp K_PASTE     &kp K_AGAIN                        &kp K_AGAIN  &kp K_PASTE    &kp K_COPY       &kp K_CUT      &kp K_UNDO
+  &kp LGUI    &mt LALT BSPC  &mt LCTRL ENTER  &mt LSHIFT DEL  &none                              &none        &mt RSHFT DEL  &mt RCTRL ENTER  &mt RALT BSPC  &kp RGUI
+  &trans      &kp ESC        &kp SPACE        &kp TAB         &none                              &none        &kp TAB        &kp SPACE        &kp ESC        &trans
                                               &mkp MB3        &mkp MB1     &mkp MB2    &mkp MB2  &mkp MB1     &mkp MB3
             >;
         };
