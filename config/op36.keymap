@@ -421,8 +421,8 @@
         ruNum {
             bindings = <
   &kp RU_CYRILLIC_HA  &kp RU_N7  &kp RU_N8  &kp RU_N9  &kp RU_CYRILLIC_HARD_SIGN                          &kp RU_CYRILLIC_IO  &en SLASH  &en LBKT   &en RBKT   &en BSLH
-  &en COMMA           &kp RU_N4  &kp RU_N5  &kp RU_N6  &kp DOUBLE_QUOTES                                  &en EQUAL           &kp RSHFT  &kp RCTRL  &kp RALT   &kp RGUI
-  &en DOT             &kp RU_N1  &kp RU_N2  &kp RU_N3  &en COLON                                          &kp RU_BSLH         &dtrunum   &dtnav     &en COMMA  &en DOT
+  &en DOT             &kp RU_N4  &kp RU_N5  &kp RU_N6  &kp DOUBLE_QUOTES                                  &en EQUAL           &kp RSHFT  &kp RCTRL  &kp RALT   &kp RGUI
+  &en COMMA           &kp RU_N1  &kp RU_N2  &kp RU_N3  &en COLON                                          &kp RU_BSLH         &dtrunum   &dtnav     &en COMMA  &en DOT
                                             &en GRAVE  &kp RU_N0                  &kp RU_MINUS    &trans  &trans              &trans
             >;
         };
