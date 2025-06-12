@@ -412,7 +412,7 @@
         ruSym {
             bindings = <
   &kp LS(RU_CYRILLIC_HA)  &en AMPS     &en STAR   &kp LPAR   &kp LS(RU_CYRILLIC_HARD_SIGN)                          &kp LS(RU_CYRILLIC_IO)  &en QMARK  &en LBRC   &en RBRC  &en PIPE
-  &en QMARK               &en DLLR     &en PRCNT  &en CARET  &kp SQT                                                &en PLUS                &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI
+  &en QMARK               &en DLLR     &en PRCNT  &en CARET  &en SQT                                                &en PLUS                &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI
   &kp RU_NUMERO           &kp RU_EXCL  &en AT     &en HASH   &en SEMI                                               &kp RU_SLASH            &dtrusym   &dtmouse   &en LT    &en GT
                                                   &en TILDE  &kp RU_RIGHT_PARENTHESIS       &kp RU_UNDER    &trans  &trans                  &trans
             >;
@@ -421,7 +421,7 @@
         ruNum {
             bindings = <
   &kp RU_CYRILLIC_HA  &kp RU_N7  &kp RU_N8  &kp RU_N9  &kp RU_CYRILLIC_HARD_SIGN                          &kp RU_CYRILLIC_IO  &en SLASH  &en LBKT   &en RBKT   &en BSLH
-  &en DOT             &kp RU_N4  &kp RU_N5  &kp RU_N6  &kp DOUBLE_QUOTES                                  &en EQUAL           &kp RSHFT  &kp RCTRL  &kp RALT   &kp RGUI
+  &en DOT             &kp RU_N4  &kp RU_N5  &kp RU_N6  &en DOUBLE_QUOTES                                  &en EQUAL           &kp RSHFT  &kp RCTRL  &kp RALT   &kp RGUI
   &en COMMA           &kp RU_N1  &kp RU_N2  &kp RU_N3  &en COLON                                          &kp RU_BSLH         &dtrunum   &dtnav     &en COMMA  &en DOT
                                             &en GRAVE  &kp RU_N0                  &kp RU_MINUS    &trans  &trans              &trans
             >;
