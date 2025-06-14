@@ -243,6 +243,18 @@
             #binding-cells = <0>;
             bindings = <&none>, <&tog 14>;
         };
+
+        mod_repeat: mod_repeat {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MOD_REPEAT";
+            bindings = <&kp>, <&key_repeat>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
+            require-prior-idle-ms = <100>;
+            flavor = "tap-preferred";
+        };
     };
 
     combos { compatible = "zmk,combos"; };
@@ -287,6 +299,13 @@
 
             label = "EN";
         };
+
+        toggle_ru: toggle_ru {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&tog 3 &kp F19>;
+            label = "TOGGLE_RU";
+        };
     };
 
     keymap {
@@ -330,10 +349,10 @@
 
         Button {
             bindings = <
-  &kp K_UNDO  &kp K_CUT      &kp K_COPY       &kp K_PASTE     &kp K_AGAIN                        &kp K_AGAIN  &kp K_PASTE    &kp K_COPY       &kp K_CUT      &kp K_UNDO
-  &kp LGUI    &mt LALT BSPC  &mt LCTRL ENTER  &mt LSHIFT DEL  &none                              &none        &mt RSHFT DEL  &mt RCTRL ENTER  &mt RALT BSPC  &kp RGUI
-  &trans      &kp ESC        &kp SPACE        &kp TAB         &none                              &none        &kp TAB        &kp SPACE        &kp ESC        &trans
-                                              &mkp MB3        &mkp MB1     &mkp MB2    &mkp MB2  &mkp MB1     &mkp MB3
+  &kp K_UNDO          &kp K_CUT      &kp K_COPY       &kp K_PASTE     &kp K_AGAIN                        &kp K_AGAIN  &kp K_PASTE    &kp K_COPY       &kp K_CUT      &kp K_UNDO
+  &mod_repeat LGUI 0  &mt LALT BSPC  &mt LCTRL ENTER  &mt LSHIFT DEL  &none                              &none        &mt RSHFT DEL  &mt RCTRL ENTER  &mt RALT BSPC  &mod_repeat RGUI 0
+  &trans              &kp ESC        &kp SPACE        &kp TAB         &none                              &none        &kp TAB        &kp SPACE        &kp ESC        &trans
+                                                      &mkp MB3        &mkp MB1     &mkp MB2    &mkp MB2  &mkp MB1     &mkp MB3
             >;
         };
 
@@ -358,7 +377,7 @@
         Mouse {
             bindings = <
   &dtboot   &dttap    &dtextra   &dtbase     &none                       &kp K_AGAIN     &kp K_PASTE     &kp K_COPY    &kp K_CUT        &kp K_UNDO
-  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHIFT  &none                       &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &kp F19
+  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHIFT  &none                       &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &toggle_ru
   &none     &none     &dtsym     &dtmouse    &none                       &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &kp LG(SPACE)
                                  &trans      &trans  &trans    &mkp MB2  &mkp MB1        &mkp MB3
             >;
