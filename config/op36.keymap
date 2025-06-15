@@ -110,14 +110,14 @@
             compatible = "zmk,behavior-tap-dance";
             label = "Double tap Sym layer";
             #binding-cells = <0>;
-            bindings = <&none>, <&tog 8>;
+            bindings = <&none>, <&tog 11>;
         };
 
         dtnum: dtnum {
             compatible = "zmk,behavior-tap-dance";
             label = "Double tap Num layer";
             #binding-cells = <0>;
-            bindings = <&none>, <&tog 9>;
+            bindings = <&none>, <&tog 12>;
         };
 
         dtfun: dtfun {
@@ -220,28 +220,28 @@
             compatible = "zmk,behavior-tap-dance";
             label = "DTGNUM";
             #binding-cells = <0>;
-            bindings = <&none>, <&tog 12>;
+            bindings = <&none>, <&tog 9>;
         };
 
         dtgsym: dtgsym {
             compatible = "zmk,behavior-tap-dance";
             label = "DTGSYM";
             #binding-cells = <0>;
-            bindings = <&none>, <&tog 11>;
+            bindings = <&none>, <&tog 8>;
         };
 
         dtrunum: dtrunum {
             compatible = "zmk,behavior-tap-dance";
             label = "DTRUNUM";
             #binding-cells = <0>;
-            bindings = <&none>, <&tog 0>;
+            bindings = <&none>, <&tog 14>;
         };
 
         dtrusym: dtrusym {
             compatible = "zmk,behavior-tap-dance";
             label = "DTRUSYM";
             #binding-cells = <0>;
-            bindings = <&none>, <&tog 14>;
+            bindings = <&none>, <&tog 13>;
         };
 
         mod_repeat: mod_repeat {
@@ -328,29 +328,29 @@
     keymap {
         compatible = "zmk,keymap";
 
-        base {
+        Base {
             bindings = <
-  &kp Q         &kp W        &kp E         &kp R         &kp T                                  &kp Y       &kp U         &kp I         &kp O        &kp P
-  &hmlw LGUI A  &hml LALT S  &hml LCTRL D  &hml LSHFT F  &kp G                                  &kp H       &hmr RSHFT J  &hmr RCTRL K  &hmr RALT L  &hmrw RGUI SEMI
-  &lt 4 Z       &kp X        &kp C         &kp V         &kp B                                  &kp N       &kp M         &kp COMMA     &kp DOT      &lt 4 FSLH
+  &kp B         &kp L        &kp D         &kp W         &kp Z                                  &gquote     &kp F         &kp O         &kp U        &kp J
+  &hmlw LGUI N  &hml LALT R  &hml LCTRL T  &hml LSHFT S  &kp G                                  &kp Y       &hmr RSHFT H  &hmr RCTRL A  &hmr RALT E  &hmrw RGUI I
+  &lt 4 Q       &kp X        &kp M         &kp C         &kp V                                  &kp K       &kp P         &gdot         &gminus      &gbutton_gslash 4 0
                                            &lt 5 ESC     &lt 6 SPACE  &lt 7 TAB    &lt 8 ENTER  &lt 9 BSPC  &lt 10 DEL
             >;
         };
 
         Extra {
             bindings = <
-  &kp B         &kp L        &kp D         &kp W         &kp Z                                   &gquote      &kp F         &kp O         &kp U        &kp J
-  &hmlw LGUI N  &hml LALT R  &hml LCTRL T  &hml LSHFT S  &kp G                                   &kp Y        &hmr RSHFT H  &hmr RCTRL A  &hmr RALT E  &hmrw RGUI I
-  &lt 4 Q       &kp X        &kp M         &kp C         &kp V                                   &kp K        &kp P         &gdot         &gminus      &gbutton_gslash 4 0
+  &kp Q         &kp W        &kp E         &kp R         &kp T                                   &kp Y        &kp U         &kp I         &kp O        &kp P
+  &hmlw LGUI A  &hml LALT S  &hml LCTRL D  &hml LSHFT F  &kp G                                   &kp H        &hmr RSHFT J  &hmr RCTRL K  &hmr RALT L  &hmrw RGUI SEMI
+  &lt 4 Z       &kp X        &kp C         &kp V         &kp B                                   &kp N        &kp M         &kp COMMA     &kp DOT      &lt 4 FSLH
                                            &lt 5 ESC     &lt 6 SPACE  &lt 7 TAB    &lt 11 ENTER  &lt 12 BSPC  &lt 10 DEL
             >;
         };
 
         Tap {
             bindings = <
-  &kp Q  &kp W  &kp E  &kp R      &kp T                                  &kp Y       &kp U       &kp I      &kp O    &kp P
-  &kp A  &kp S  &kp D  &kp F      &kp G                                  &kp H       &kp J       &kp K      &kp L    &kp SEMI
-  &kp Z  &kp X  &kp C  &kp V      &kp B                                  &kp N       &kp M       &kp COMMA  &kp DOT  &kp FSLH
+  &kp B  &kp L  &kp D  &kp W      &kp Z                                  &gquote     &kp F       &kp O  &kp U    &kp J
+  &kp N  &kp R  &kp T  &kp S      &kp G                                  &kp Y       &kp H       &kp A  &kp E    &kp I
+  &kp Q  &kp X  &kp M  &kp C      &kp V                                  &kp K       &kp P       &gdot  &gminus  &gslash
                        &lt 5 ESC  &lt 6 SPACE  &lt 7 TAB    &lt 8 ENTER  &lt 9 BSPC  &lt 10 DEL
             >;
         };
@@ -400,33 +400,6 @@
             >;
         };
 
-        Sym {
-            bindings = <
-  &kp LBRC   &kp AMPS  &kp STAR   &kp LPAR   &kp RBRC                       &none   &dtbase    &dtextra   &dttap    &dtboot
-  &kp DQT    &kp DLLR  &kp PRCNT  &kp CARET  &kp PLUS                       &none   &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI
-  &kp TILDE  &kp EXCL  &kp AT     &kp HASH   &kp PIPE                       &none   &dtsym     &dtmouse   &none     &none
-                                  &kp LPAR   &kp RPAR  &kp UNDER    &trans  &trans  &trans
-            >;
-        };
-
-        Num {
-            bindings = <
-  &kp LBKT   &kp N7  &kp N8  &kp N9   &kp RBKT                        &none   &dtbase     &dtextra   &dttap    &dtboot
-  &kp SQT    &kp N4  &kp N5  &kp N6   &kp EQUAL                       &none   &kp RSHIFT  &kp RCTRL  &kp RALT  &kp RGUI
-  &kp GRAVE  &kp N1  &kp N2  &kp N3   &kp BSLH                        &none   &dtnum      &dtnav     &none     &none
-                             &kp DOT  &kp N0     &kp MINUS    &trans  &trans  &trans
-            >;
-        };
-
-        Fun {
-            bindings = <
-  &kp F12  &kp F7  &kp F8  &kp F9      &kp PSCRN                     &none   &dtbase    &dtextra   &dttap    &dtboot
-  &kp F11  &kp F4  &kp F5  &kp F6      &kp CAPS                      &none   &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI
-  &kp F10  &kp F1  &kp F2  &kp F3      &kp INS                       &none   &dtfun     &dtmedia   &none     &none
-                           &kp K_MENU  &kp SPACE  &kp TAB    &trans  &trans  &trans
-            >;
-        };
-
         gSym {
             bindings = <
   &kp LBRC   &kp AMPS  &kp STAR   &kp LPAR   &kp RBRC                       &none   &dtbase    &dtextra   &dttap    &dtboot
@@ -442,6 +415,33 @@
   &gcomma    &kp N4  &kp N5  &kp N6   &kp EQUAL                      &none   &kp RSHIFT  &kp RCTRL  &kp RALT  &kp RGUI
   &kp GRAVE  &kp N1  &kp N2  &kp N3   &kp BSLH                       &none   &dtgnum     &dtnav     &none     &none
                              &kp DOT  &kp N0     &kp SEMI    &trans  &trans  &trans
+            >;
+        };
+
+        Fun {
+            bindings = <
+  &kp F12  &kp F7  &kp F8  &kp F9      &kp PSCRN                     &none   &dtbase    &dtextra   &dttap    &dtboot
+  &kp F11  &kp F4  &kp F5  &kp F6      &kp CAPS                      &none   &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI
+  &kp F10  &kp F1  &kp F2  &kp F3      &kp INS                       &none   &dtfun     &dtmedia   &none     &none
+                           &kp K_MENU  &kp SPACE  &kp TAB    &trans  &trans  &trans
+            >;
+        };
+
+        qSym {
+            bindings = <
+  &kp LBRC   &kp AMPS  &kp STAR   &kp LPAR   &kp RBRC                       &none   &dtbase    &dtextra   &dttap    &dtboot
+  &kp DQT    &kp DLLR  &kp PRCNT  &kp CARET  &kp PLUS                       &none   &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI
+  &kp TILDE  &kp EXCL  &kp AT     &kp HASH   &kp PIPE                       &none   &dtsym     &dtmouse   &none     &none
+                                  &kp LPAR   &kp RPAR  &kp UNDER    &trans  &trans  &trans
+            >;
+        };
+
+        qNum {
+            bindings = <
+  &kp LBKT   &kp N7  &kp N8  &kp N9   &kp RBKT                        &none   &dtbase     &dtextra   &dttap    &dtboot
+  &kp SQT    &kp N4  &kp N5  &kp N6   &kp EQUAL                       &none   &kp RSHIFT  &kp RCTRL  &kp RALT  &kp RGUI
+  &kp GRAVE  &kp N1  &kp N2  &kp N3   &kp BSLH                        &none   &dtnum      &dtnav     &none     &none
+                             &kp DOT  &kp N0     &kp MINUS    &trans  &trans  &trans
             >;
         };
 
