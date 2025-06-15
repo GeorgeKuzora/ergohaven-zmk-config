@@ -255,6 +255,15 @@
             require-prior-idle-ms = <100>;
             flavor = "tap-preferred";
         };
+
+        layer_en_extra: layer_en_extra {
+            compatible = "zmk,behavior-mod-morph";
+            label = "LAYER_EN_EXTRA";
+            bindings = <&layer_en>, <&layer_extra>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     combos { compatible = "zmk,combos"; };
@@ -305,6 +314,13 @@
             #binding-cells = <0>;
             bindings = <&tog 3 &kp F19>;
             label = "TOGGLE_RU";
+        };
+
+        layer_extra: layer_extra {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to 1 &to_en>;
+            label = "LAYER_EXTRA";
         };
     };
 
@@ -368,7 +384,7 @@
         Nav {
             bindings = <
   &dtboot   &dttap    &dtextra   &dtbase     &none                        &kp K_AGAIN  &kp K_PASTE    &kp K_COPY   &kp K_CUT  &kp K_UNDO
-  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHIFT  &none                        &kp LEFT     &kp DOWN       &kp UP       &kp RIGHT  &layer_en
+  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHIFT  &none                        &kp LEFT     &kp DOWN       &kp UP       &kp RIGHT  &layer_en_extra
   &none     &none     &dtnum     &dtnav      &none                        &kp HOME     &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &layer_ru
                                  &trans      &trans  &trans    &kp ENTER  &kp BSPC     &kp DEL
             >;
