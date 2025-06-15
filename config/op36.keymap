@@ -257,12 +257,13 @@
         };
 
         layer_en_extra: layer_en_extra {
-            compatible = "zmk,behavior-mod-morph";
+            compatible = "zmk,behavior-hold-tap";
             label = "LAYER_EN_EXTRA";
-            bindings = <&layer_en>, <&layer_extra>;
+            bindings = <&layer_extra>, <&layer_en>;
 
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT|MOD_LCTL|MOD_LALT|MOD_LGUI|MOD_RCTL|MOD_RALT|MOD_RGUI)>;
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
         };
     };
 
@@ -384,7 +385,7 @@
         Nav {
             bindings = <
   &dtboot   &dttap    &dtextra   &dtbase     &none                        &kp K_AGAIN  &kp K_PASTE    &kp K_COPY   &kp K_CUT  &kp K_UNDO
-  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHIFT  &none                        &kp LEFT     &kp DOWN       &kp UP       &kp RIGHT  &layer_en_extra
+  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHIFT  &none                        &kp LEFT     &kp DOWN       &kp UP       &kp RIGHT  &layer_en_extra 0 0
   &none     &none     &dtnum     &dtnav      &none                        &kp HOME     &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &layer_ru
                                  &trans      &trans  &trans    &kp ENTER  &kp BSPC     &kp DEL
             >;
