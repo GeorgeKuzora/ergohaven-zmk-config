@@ -127,67 +127,6 @@
             bindings = <&none>, <&tog 10>;
         };
 
-        gquote: gquote {
-            compatible = "zmk,behavior-mod-morph";
-            label = "GQUOTE";
-            bindings = <&kp SQT>, <&kp UNDER>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_LCTL|MOD_LALT|MOD_LGUI|MOD_RCTL|MOD_RALT|MOD_RGUI)>;
-        };
-
-        gdot: gdot {
-            compatible = "zmk,behavior-mod-morph";
-            label = "GDOT";
-            bindings = <&kp DOT>, <&kp GT>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_LCTL|MOD_LALT|MOD_LGUI|MOD_RCTL|MOD_RALT|MOD_RGUI)>;
-        };
-
-        gminus: gminus {
-            compatible = "zmk,behavior-mod-morph";
-            label = "GMINUS";
-            bindings = <&kp MINUS>, <&kp DQT>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_LCTL|MOD_LALT|MOD_LGUI|MOD_RCTL|MOD_RALT|MOD_RGUI)>;
-        };
-
-        gslash: gslash {
-            compatible = "zmk,behavior-mod-morph";
-            label = "GSLASH";
-            bindings = <&kp SLASH>, <&kp LT>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_LCTL|MOD_LGUI|MOD_LALT|MOD_RCTL|MOD_RALT|MOD_RGUI)>;
-        };
-
-        gcomma: gcomma {
-            compatible = "zmk,behavior-mod-morph";
-            label = "GCOMMA";
-            bindings = <&kp COMMA>, <&kp QMARK>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_LCTL|MOD_LALT|MOD_LGUI|MOD_RCTL|MOD_RALT|MOD_RGUI)>;
-        };
-
-        gbutton_gslash: gbutton_gslash {
-            compatible = "zmk,behavior-hold-tap";
-            label = "GBUTTON_GSLASH";
-            bindings = <&mo>, <&gslash>;
-
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            require-prior-idle-ms = <100>;
-        };
-
         hmlw: hmlw {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -216,20 +155,6 @@
             label = "HMRW";
         };
 
-        dtgnum: dtgnum {
-            compatible = "zmk,behavior-tap-dance";
-            label = "DTGNUM";
-            #binding-cells = <0>;
-            bindings = <&none>, <&tog 12>;
-        };
-
-        dtgsym: dtgsym {
-            compatible = "zmk,behavior-tap-dance";
-            label = "DTGSYM";
-            #binding-cells = <0>;
-            bindings = <&none>, <&tog 11>;
-        };
-
         dtrunum: dtrunum {
             compatible = "zmk,behavior-tap-dance";
             label = "DTRUNUM";
@@ -241,7 +166,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "DTRUSYM";
             #binding-cells = <0>;
-            bindings = <&none>, <&tog 14>;
+            bindings = <&none>, <&tog 12>;
         };
 
         mod_repeat: mod_repeat {
@@ -254,16 +179,6 @@
             quick-tap-ms = <200>;
             require-prior-idle-ms = <100>;
             flavor = "tap-preferred";
-        };
-
-        layer_en_extra: layer_en_extra {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_EN_EXTRA";
-            bindings = <&layer_extra>, <&layer_en>;
-
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
         };
     };
 
@@ -316,13 +231,6 @@
             bindings = <&tog 3 &kp F19>;
             label = "TOGGLE_RU";
         };
-
-        layer_extra: layer_extra {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&to 1 &to_en>;
-            label = "LAYER_EXTRA";
-        };
     };
 
     keymap {
@@ -339,10 +247,10 @@
 
         Extra {
             bindings = <
-  &kp B         &kp L        &kp D         &kp W         &kp Z                                   &gquote      &kp F         &kp O         &kp U        &kp J
-  &hmlw LGUI N  &hml LALT R  &hml LCTRL T  &hml LSHFT S  &kp G                                   &kp Y        &hmr RSHFT H  &hmr RCTRL A  &hmr RALT E  &hmrw RGUI I
-  &lt 4 Q       &kp X        &kp M         &kp C         &kp V                                   &kp K        &kp P         &gdot         &gminus      &gbutton_gslash 4 0
-                                           &lt 5 ESC     &lt 6 SPACE  &lt 7 TAB    &lt 11 ENTER  &lt 12 BSPC  &lt 10 DEL
+  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+                          &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
 
@@ -360,7 +268,7 @@
   &kp RU_CYRILLIC_SHORT_I    &kp RU_CYRILLIC_TSE         &kp RU_CYRILLIC_U          &kp RU_CYRILLIC_KA        &kp RU_CYRILLIC_IE                             &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA        &kp RU_CYRILLIC_SHCHA     &kp RU_CYRILLIC_ZE
   &hmlw LGUI RU_CYRILLIC_EF  &hml LALT RU_CYRILLIC_YERU  &hml LCTRL RU_CYRILLIC_VE  &hml LSHFT RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                             &kp RU_CYRILLIC_ER  &hmr RSHFT RU_CYRILLIC_O   &hmr RCTRL RU_CYRILLIC_EL  &hmr RALT RU_CYRILLIC_DE  &hmrw RGUI RU_CYRILLIC_ZHE
   &lt 4 RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE         &kp RU_CYRILLIC_ES         &kp RU_CYRILLIC_EM        &kp RU_CYRILLIC_I                              &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE         &kp RU_CYRILLIC_YU        &lt 4 RU_CYRILLIC_E
-                                                                                    &lt 5 ESC                 &lt 6 SPACE         &lt 7 TAB    &lt 13 ENTER  &lt 14 BSPC         &lt 10 DEL
+                                                                                    &lt 5 ESC                 &lt 6 SPACE         &lt 7 TAB    &lt 11 ENTER  &lt 12 BSPC         &lt 10 DEL
             >;
         };
 
@@ -385,7 +293,7 @@
         Nav {
             bindings = <
   &dtboot   &dttap    &dtextra   &dtbase     &none                        &kp K_AGAIN  &kp K_PASTE    &kp K_COPY   &kp K_CUT  &kp K_UNDO
-  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHIFT  &none                        &kp LEFT     &kp DOWN       &kp UP       &kp RIGHT  &layer_en_extra 0 0
+  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHIFT  &none                        &kp LEFT     &kp DOWN       &kp UP       &kp RIGHT  &layer_en
   &none     &none     &dtnum     &dtnav      &none                        &kp HOME     &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &layer_ru
                                  &trans      &trans  &trans    &kp ENTER  &kp BSPC     &kp DEL
             >;
@@ -424,24 +332,6 @@
   &kp F11  &kp F4  &kp F5  &kp F6      &kp CAPS                      &none   &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI
   &kp F10  &kp F1  &kp F2  &kp F3      &kp INS                       &none   &dtfun     &dtmedia   &none     &none
                            &kp K_MENU  &kp SPACE  &kp TAB    &trans  &trans  &trans
-            >;
-        };
-
-        gSym {
-            bindings = <
-  &kp LBRC   &kp AMPS  &kp STAR   &kp LPAR   &kp RBRC                       &none   &dtbase    &dtextra   &dttap    &dtboot
-  &kp QMARK  &kp DLLR  &kp PRCNT  &kp CARET  &kp PLUS                       &none   &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI
-  &kp TILDE  &kp EXCL  &kp AT     &kp HASH   &kp PIPE                       &none   &dtgsym    &dtmouse   &none     &none
-                                  &kp LPAR   &kp RPAR  &kp COLON    &trans  &trans  &trans
-            >;
-        };
-
-        gNum {
-            bindings = <
-  &kp LBKT   &kp N7  &kp N8  &kp N9   &kp RBKT                       &none   &dtbase     &dtextra   &dttap    &dtboot
-  &gcomma    &kp N4  &kp N5  &kp N6   &kp EQUAL                      &none   &kp RSHIFT  &kp RCTRL  &kp RALT  &kp RGUI
-  &kp GRAVE  &kp N1  &kp N2  &kp N3   &kp BSLH                       &none   &dtgnum     &dtnav     &none     &none
-                             &kp DOT  &kp N0     &kp SEMI    &trans  &trans  &trans
             >;
         };
 
