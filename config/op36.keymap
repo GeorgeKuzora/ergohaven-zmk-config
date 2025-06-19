@@ -180,6 +180,18 @@
             require-prior-idle-ms = <100>;
             flavor = "tap-preferred";
         };
+
+        mten: mten {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MTEN";
+            bindings = <&kp>, <&en>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
+            require-prior-idle-ms = <100>;
+            flavor = "tap-preferred";
+        };
     };
 
     combos { compatible = "zmk,combos"; };
@@ -337,18 +349,18 @@
 
         ruSym {
             bindings = <
-  &kp LS(RU_CYRILLIC_HA)  &en AMPS     &en STAR   &kp LPAR   &kp LS(RU_CYRILLIC_HARD_SIGN)                          &kp LS(RU_CYRILLIC_IO)  &en QMARK  &en LBRC   &en RBRC  &kp RU_NUMERO
-  &en DQT                 &en DLLR     &en PRCNT  &en CARET  &en PLUS                                               &en COLON               &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI
-  &en TILDE               &kp RU_EXCL  &en AT     &en HASH   &en PIPE                                               &kp RU_SLASH            &dtrusym   &dtmouse   &en LT    &en GT
+  &kp LS(RU_CYRILLIC_HA)  &en AMPS     &en STAR   &kp LPAR   &kp LS(RU_CYRILLIC_HARD_SIGN)                          &kp LS(RU_CYRILLIC_IO)  &en QMARK                     &en LBRC                             &en RBRC       &kp RU_NUMERO
+  &en DQT                 &en DLLR     &en PRCNT  &en CARET  &en PLUS                                               &en COLON               &mt RSHFT LS(RU_CYRILLIC_HA)  &mt RCTRL LS(RU_CYRILLIC_HARD_SIGN)  &mten RALT LT  &mten RGUI GT
+  &en TILDE               &kp RU_EXCL  &en AT     &en HASH   &en PIPE                                               &kp RU_SLASH            &dtrusym                      &dtmouse                             &en LT         &en GT
                                                   &en COMMA  &kp RU_RIGHT_PARENTHESIS       &kp RU_UNDER    &trans  &trans                  &trans
             >;
         };
 
         ruNum {
             bindings = <
-  &kp RU_CYRILLIC_HA  &kp RU_N7  &kp RU_N8  &kp RU_N9  &kp RU_CYRILLIC_HARD_SIGN                          &kp RU_CYRILLIC_IO  &en SLASH  &en LBKT   &en RBKT   &kp RU_DQT
-  &en SQT             &kp RU_N4  &kp RU_N5  &kp RU_N6  &en EQUAL                                          &en SEMI            &kp RSHFT  &kp RCTRL  &kp RALT   &kp RGUI
-  &en GRAVE           &kp RU_N1  &kp RU_N2  &kp RU_N3  &en BSLH                                           &kp RU_BSLH         &dtrunum   &dtnav     &en COMMA  &en DOT
+  &kp RU_CYRILLIC_HA  &kp RU_N7  &kp RU_N8  &kp RU_N9  &kp RU_CYRILLIC_HARD_SIGN                          &kp RU_CYRILLIC_IO  &en SLASH                 &en LBKT                         &en RBKT          &kp RU_DQT
+  &en SQT             &kp RU_N4  &kp RU_N5  &kp RU_N6  &en EQUAL                                          &en SEMI            &mt RSHFT RU_CYRILLIC_HA  &mt RCTRL RU_CYRILLIC_HARD_SIGN  &mten RALT COMMA  &mten RGUI DOT
+  &en GRAVE           &kp RU_N1  &kp RU_N2  &kp RU_N3  &en BSLH                                           &kp RU_BSLH         &dtrunum                  &dtnav                           &en COMMA         &en DOT
                                             &en DOT    &kp RU_N0                  &kp RU_MINUS    &trans  &trans              &trans
             >;
         };
