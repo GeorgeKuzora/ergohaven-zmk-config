@@ -280,6 +280,62 @@
             timeout-ms = <100>;
             layers = <11>;
         };
+
+        combo_dot {
+            bindings = <&kp DOT>;
+            key-positions = <23 22>;
+            timeout-ms = <100>;
+            layers = <9>;
+        };
+
+        combo_comma {
+            bindings = <&kp COMMA>;
+            key-positions = <21 22>;
+            timeout-ms = <100>;
+            layers = <9>;
+        };
+
+        combo_dot_rus {
+            bindings = <&en DOT>;
+            key-positions = <22 23>;
+            timeout-ms = <100>;
+            layers = <12>;
+        };
+
+        combo_comma_rus {
+            bindings = <&en COMMA>;
+            key-positions = <21 22>;
+            timeout-ms = <100>;
+            layers = <12>;
+        };
+
+        combo_lt {
+            bindings = <&kp LT>;
+            key-positions = <21 22>;
+            timeout-ms = <100>;
+            layers = <8>;
+        };
+
+        combo_gt {
+            bindings = <&kp GT>;
+            key-positions = <22 23>;
+            timeout-ms = <100>;
+            layers = <8>;
+        };
+
+        combo_lt_rus {
+            bindings = <&en LT>;
+            key-positions = <21 22>;
+            timeout-ms = <100>;
+            layers = <11>;
+        };
+
+        combo_gt_rus {
+            bindings = <&en GT>;
+            key-positions = <22 23>;
+            timeout-ms = <100>;
+            layers = <11>;
+        };
     };
 
     macros {
@@ -435,8 +491,8 @@
 
         ruSym {
             bindings = <
-  &en LBRC   &en AMPS     &en STAR   &kp LPAR   &en RBRC                                          &kp LS(RU_CYRILLIC_IO)  &en QMARK                     &en LBRC                             &en RBRC       &kp RU_NUMERO
-  &en DQT    &en DLLR     &en PRCNT  &en CARET  &en PLUS                                          &en COLON               &mt RSHFT LS(RU_CYRILLIC_HA)  &mt RCTRL LS(RU_CYRILLIC_HARD_SIGN)  &mten RALT LT  &mten RGUI GT
+  &en LBRC   &en AMPS     &en STAR   &kp LPAR   &en RBRC                                          &kp LS(RU_CYRILLIC_IO)  &dtbase                       &dtextra                             &dttap         &dtboot
+  &en DQT    &en DLLR     &en PRCNT  &en CARET  &en PLUS                                          &kp RU_NUMERO           &mt RSHFT LS(RU_CYRILLIC_HA)  &mt RCTRL LS(RU_CYRILLIC_HARD_SIGN)  &mten RALT LT  &mten RGUI GT
   &en TILDE  &kp RU_EXCL  &en AT     &en HASH   &en PIPE                                          &kp RU_SLASH            &dtrusym                      &dtmouse                             &en LT         &en GT
                                      &en COMMA  &kp RU_RIGHT_PARENTHESIS  &kp RU_UNDER    &trans  &trans                  &trans
             >;
@@ -444,8 +500,8 @@
 
         ruNum {
             bindings = <
-  &en LEFT_BRACKET  &kp RU_N7  &kp RU_N8  &kp RU_N9  &en RIGHT_BRACKET                          &kp RU_CYRILLIC_IO  &en SLASH  &en LBKT   &en RBKT   &kp RU_DQT
-  &en SQT           &kp RU_N4  &kp RU_N5  &kp RU_N6  &en EQUAL                                  &en SEMI            &kp RSHFT  &kp RCTRL  &kp RALT   &kp RGUI
+  &en LEFT_BRACKET  &kp RU_N7  &kp RU_N8  &kp RU_N9  &en RIGHT_BRACKET                          &kp RU_CYRILLIC_IO  &dtbase    &dtextra   &dttap     &dtboot
+  &en SQT           &kp RU_N4  &kp RU_N5  &kp RU_N6  &en EQUAL                                  &kp RU_DQT          &kp RSHFT  &kp RCTRL  &kp RALT   &kp RGUI
   &en GRAVE         &kp RU_N1  &kp RU_N2  &kp RU_N3  &en BSLH                                   &kp RU_BSLH         &dtrunum   &dtnav     &en COMMA  &en DOT
                                           &en DOT    &kp RU_N0          &kp RU_MINUS    &trans  &trans              &trans
             >;
