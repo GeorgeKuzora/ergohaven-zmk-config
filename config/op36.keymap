@@ -197,31 +197,87 @@
     combos {
         compatible = "zmk,combos";
 
-        x {
+        combo_x {
             bindings = <&kp RU_CYRILLIC_HA>;
             key-positions = <12 13>;
             timeout-ms = <200>;
             layers = <12>;
         };
 
-        x_cap {
+        combo_x_cap {
             bindings = <&kp LS(RU_CYRILLIC_HA)>;
             key-positions = <12 12 13>;
             timeout-ms = <200>;
             layers = <11>;
         };
 
-        hard_sign {
+        combo_hard_sign {
             bindings = <&kp RU_CYRILLIC_HARD_SIGN>;
-            key-positions = <23 22>;
+            key-positions = <11 12>;
             timeout-ms = <200>;
             layers = <12>;
         };
 
-        hard_sign_cap {
+        combo_hard_sign_cap {
             bindings = <&kp LS(RU_CYRILLIC_HARD_SIGN)>;
-            key-positions = <22 23>;
+            key-positions = <11 12>;
             timeout-ms = <200>;
+            layers = <11>;
+        };
+
+        combo_semi {
+            bindings = <&kp SEMI>;
+            key-positions = <2 3>;
+            timeout-ms = <100>;
+            layers = <9>;
+        };
+
+        combo_semi_rus {
+            bindings = <&en SEMI>;
+            key-positions = <3 2>;
+            timeout-ms = <100>;
+            layers = <12>;
+        };
+
+        combo_colon {
+            bindings = <&kp COLON>;
+            key-positions = <2 3>;
+            timeout-ms = <100>;
+            layers = <8>;
+        };
+
+        combo_colon_rus {
+            bindings = <&en COLON>;
+            key-positions = <2 3>;
+            timeout-ms = <100>;
+            layers = <11>;
+        };
+
+        combo_slash {
+            bindings = <&kp SLASH>;
+            key-positions = <1 2>;
+            timeout-ms = <100>;
+            layers = <9>;
+        };
+
+        combo_slash_rus {
+            bindings = <&en SLASH>;
+            key-positions = <1 2>;
+            timeout-ms = <100>;
+            layers = <12>;
+        };
+
+        combo_qmark {
+            bindings = <&kp QMARK>;
+            key-positions = <1 2>;
+            timeout-ms = <100>;
+            layers = <8>;
+        };
+
+        combo_qmark_rus {
+            bindings = <&en QMARK>;
+            key-positions = <1 2>;
+            timeout-ms = <100>;
             layers = <11>;
         };
     };
