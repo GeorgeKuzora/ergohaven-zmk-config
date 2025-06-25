@@ -205,28 +205,28 @@
         combo_x {
             bindings = <&kp RU_CYRILLIC_HA>;
             key-positions = <12 13>;
-            timeout-ms = <200>;
+            timeout-ms = <100>;
             layers = <12>;
         };
 
         combo_x_cap {
             bindings = <&kp LS(RU_CYRILLIC_HA)>;
             key-positions = <12 12 13>;
-            timeout-ms = <200>;
+            timeout-ms = <100>;
             layers = <11>;
         };
 
         combo_hard_sign {
             bindings = <&kp RU_CYRILLIC_HARD_SIGN>;
             key-positions = <11 12>;
-            timeout-ms = <200>;
+            timeout-ms = <100>;
             layers = <12>;
         };
 
         combo_hard_sign_cap {
             bindings = <&kp LS(RU_CYRILLIC_HARD_SIGN)>;
             key-positions = <11 12>;
-            timeout-ms = <200>;
+            timeout-ms = <100>;
             layers = <11>;
         };
 
@@ -453,7 +453,7 @@
             bindings = <
   &dtboot   &dttap    &dtextra   &dtbase     &none                        &kp K_AGAIN  &kp K_PASTE    &kp K_COPY   &kp K_CUT  &kp K_UNDO
   &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHIFT  &none                        &kp LEFT     &kp DOWN       &kp UP       &kp RIGHT  &toggle_ru
-  &none     &none     &dtnum     &dtnav      &none                        &kp HOME     &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &kp LG(SPACE) 
+  &none     &none     &dtnum     &dtnav      &none                        &kp HOME     &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &kp LG(SPACE)
                                  &trans      &trans  &trans    &kp ENTER  &kp BSPC     &kp DEL
             >;
         };
