@@ -211,7 +211,7 @@
 
         combo_x_cap {
             bindings = <&kp LS(RU_CYRILLIC_HA)>;
-            key-positions = <12 12 13>;
+            key-positions = <13 12>;
             timeout-ms = <100>;
             layers = <11>;
         };
