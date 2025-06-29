@@ -406,10 +406,10 @@
 
         Extra {
             bindings = <
-  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-                          &trans  &trans  &trans    &trans  &trans  &trans
+  &kp Q         &kp W        &kp F         &kp P         &kp B                                  &kp J       &kp L         &kp U         &kp Y        &kp SEMI
+  &hmlw LGUI A  &hml LALT R  &hml LCTRL S  &hml LSHFT T  &kp G                                  &kp M       &hmr RSHFT N  &hmr RCTRL E  &hmr RALT I  &hmrw RGUI O
+  &lt 4 Z       &kp X        &kp C         &kp D         &kp V                                  &kp K       &kp H         &kp COMMA     &kp DOT      &lt 4 SLASH
+                                           &lt 5 ESC     &lt 6 SPACE  &lt 7 TAB    &lt 8 ENTER  &lt 9 BSPC  &lt 10 DEL
             >;
         };
 
