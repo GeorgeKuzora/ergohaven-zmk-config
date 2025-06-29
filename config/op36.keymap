@@ -496,10 +496,10 @@
 
         ruSym {
             bindings = <
-  &en LBRC   &en AMPS     &en STAR   &kp LPAR   &en RBRC                                          &kp LS(RU_CYRILLIC_IO)  &dtbase                       &dtextra                             &dttap         &dtboot
-  &en DQT    &en DLLR     &en PRCNT  &en CARET  &en PLUS                                          &kp RU_NUMERO           &mt RSHFT LS(RU_CYRILLIC_HA)  &mt RCTRL LS(RU_CYRILLIC_HARD_SIGN)  &mten RALT LT  &mten RGUI GT
-  &en TILDE  &kp RU_EXCL  &en AT     &en HASH   &en PIPE                                          &kp RU_SLASH            &dtrusym                      &dtmouse                             &none          &none
-                                     &en LPAR   &kp RU_RIGHT_PARENTHESIS  &kp RU_UNDER    &trans  &trans                  &trans
+  &en LBRC   &en AMPS     &en STAR   &kp LPAR   &en RBRC                                          &kp LS(RU_CYRILLIC_IO)  &dtbase    &dtextra   &dttap    &dtboot
+  &en DQT    &en DLLR     &en PRCNT  &en CARET  &en PLUS                                          &kp RU_NUMERO           &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI
+  &en TILDE  &kp RU_EXCL  &en AT     &en HASH   &en PIPE                                          &kp RU_SLASH            &dtrusym   &dtmouse   &none     &none
+                                     &kp LPAR   &kp RU_RIGHT_PARENTHESIS  &kp RU_UNDER    &trans  &trans                  &trans
             >;
         };
 
