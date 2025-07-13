@@ -204,30 +204,16 @@
 
         combo_x {
             bindings = <&kp RU_CYRILLIC_HA>;
-            key-positions = <22 23>;
-            timeout-ms = <100>;
-            layers = <12>;
-        };
-
-        combo_x_cap {
-            bindings = <&kp LS(RU_CYRILLIC_HA)>;
-            key-positions = <22 23>;
-            timeout-ms = <100>;
-            layers = <11>;
+            key-positions = <6 7>;
+            timeout-ms = <50>;
+            layers = <3>;
         };
 
         combo_hard_sign {
             bindings = <&kp RU_CYRILLIC_HARD_SIGN>;
-            key-positions = <21 22>;
-            timeout-ms = <100>;
-            layers = <12>;
-        };
-
-        combo_hard_sign_cap {
-            bindings = <&kp LS(RU_CYRILLIC_HARD_SIGN)>;
-            key-positions = <21 22>;
-            timeout-ms = <100>;
-            layers = <11>;
+            key-positions = <8 7>;
+            timeout-ms = <50>;
+            layers = <3>;
         };
 
         combo_semi {
