@@ -197,6 +197,67 @@
             #binding-cells = <0>;
             bindings = <&none>, <&soft_off>;
         };
+
+        gquote: gquote {
+            compatible = "zmk,behavior-mod-morph";
+            label = "GQUOTE";
+            bindings = <&kp SQT>, <&kp UNDER>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_LCTL|MOD_LALT|MOD_LGUI|MOD_RCTL|MOD_RALT|MOD_RGUI)>;
+        };
+
+        gdot: gdot {
+            compatible = "zmk,behavior-mod-morph";
+            label = "GDOT";
+            bindings = <&kp DOT>, <&kp GT>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_LCTL|MOD_LALT|MOD_LGUI|MOD_RCTL|MOD_RALT|MOD_RGUI)>;
+        };
+
+        gminus: gminus {
+            compatible = "zmk,behavior-mod-morph";
+            label = "GMINUS";
+            bindings = <&kp MINUS>, <&kp DQT>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_LCTL|MOD_LALT|MOD_LGUI|MOD_RCTL|MOD_RALT|MOD_RGUI)>;
+        };
+
+        gslash: gslash {
+            compatible = "zmk,behavior-mod-morph";
+            label = "GSLASH";
+            bindings = <&kp SLASH>, <&kp LT>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_LCTL|MOD_LGUI|MOD_LALT|MOD_RCTL|MOD_RALT|MOD_RGUI)>;
+        };
+
+        gcomma: gcomma {
+            compatible = "zmk,behavior-mod-morph";
+            label = "GCOMMA";
+            bindings = <&kp COMMA>, <&kp QMARK>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_LCTL|MOD_LALT|MOD_LGUI|MOD_RCTL|MOD_RALT|MOD_RGUI)>;
+        };
+
+        gbutton_gslash: gbutton_gslash {
+            compatible = "zmk,behavior-hold-tap";
+            label = "GBUTTON_GSLASH";
+            bindings = <&mo>, <&gslash>;
+
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            require-prior-idle-ms = <100>;
+        };
     };
 
     combos {
