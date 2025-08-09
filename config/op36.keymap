@@ -388,6 +388,34 @@
             timeout-ms = <100>;
             layers = <11>;
         };
+
+        combo_lt_num {
+            bindings = <&kp LT>;
+            key-positions = <21 22>;
+            timeout-ms = <100>;
+            layers = <9>;
+        };
+
+        combo_gt_num {
+            bindings = <&kp GT>;
+            key-positions = <23 22>;
+            timeout-ms = <100>;
+            layers = <9>;
+        };
+
+        combo_lt_rus_num {
+            bindings = <&en LT>;
+            key-positions = <21 22>;
+            timeout-ms = <100>;
+            layers = <12>;
+        };
+
+        combo_gt_rus_num {
+            bindings = <&en GT>;
+            key-positions = <22 23>;
+            timeout-ms = <100>;
+            layers = <12>;
+        };
     };
 
     macros {
