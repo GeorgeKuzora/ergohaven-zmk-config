@@ -279,16 +279,16 @@
 
         combo_semi {
             bindings = <&kp SEMI>;
-            key-positions = <2 3>;
+            key-positions = <2 1>;
             timeout-ms = <100>;
-            layers = <8>;
+            layers = <9>;
         };
 
         combo_semi_rus {
             bindings = <&en SEMI>;
-            key-positions = <3 2>;
+            key-positions = <2 1>;
             timeout-ms = <100>;
-            layers = <11>;
+            layers = <12>;
         };
 
         combo_colon {
@@ -307,28 +307,28 @@
 
         combo_slash {
             bindings = <&kp SLASH>;
-            key-positions = <1 2>;
+            key-positions = <>;
             timeout-ms = <100>;
             layers = <9>;
         };
 
         combo_slash_rus {
             bindings = <&en SLASH>;
-            key-positions = <1 2>;
+            key-positions = <>;
             timeout-ms = <100>;
             layers = <12>;
         };
 
         combo_qmark {
             bindings = <&kp QMARK>;
-            key-positions = <1 2>;
+            key-positions = <>;
             timeout-ms = <100>;
             layers = <8>;
         };
 
         combo_qmark_rus {
             bindings = <&en QMARK>;
-            key-positions = <1 2>;
+            key-positions = <>;
             timeout-ms = <100>;
             layers = <11>;
         };
@@ -363,28 +363,28 @@
 
         combo_lt {
             bindings = <&kp LT>;
-            key-positions = <12 11>;
+            key-positions = <>;
             timeout-ms = <100>;
             layers = <8>;
         };
 
         combo_gt {
             bindings = <&kp GT>;
-            key-positions = <13 12>;
+            key-positions = <>;
             timeout-ms = <100>;
             layers = <8>;
         };
 
         combo_lt_rus {
             bindings = <&en LT>;
-            key-positions = <11 12>;
+            key-positions = <>;
             timeout-ms = <100>;
             layers = <11>;
         };
 
         combo_gt_rus {
             bindings = <&en GT>;
-            key-positions = <12 13>;
+            key-positions = <>;
             timeout-ms = <100>;
             layers = <11>;
         };
@@ -546,17 +546,17 @@
             bindings = <
   &kp HASH   &kp LBRC  &kp STAR   &kp RBRC  &kp CARET                       &none   &dtbase    &dtextra   &dttap    &dtboot
   &kp DQT    &kp LBKT  &kp PRCNT  &kp RBKT  &kp AT                          &none   &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI
-  &kp TILDE  &kp LPAR  &kp DLLR   &kp RPAR  &kp PIPE                        &none   &dtsym     &dtmouse   &none     &none
-                                  &kp AMPS  &kp SLASH  &kp UNDER    &trans  &trans  &trans
+  &kp TILDE  &kp LPAR  &kp DLLR   &kp RPAR  &kp AMPS                        &none   &dtsym     &dtmouse   &none     &none
+                                  &kp PIPE  &kp QMARK  &kp UNDER    &trans  &trans  &trans
             >;
         };
 
         Num {
             bindings = <
-  &kp EXCL   &kp N7  &kp N8  &kp N9     &kp PLUS                        &none   &dtbase     &dtextra   &dttap    &dtboot
-  &kp SQT    &kp N4  &kp N5  &kp N6     &kp EQUAL                       &none   &kp RSHIFT  &kp RCTRL  &kp RALT  &kp RGUI
-  &kp GRAVE  &kp N1  &kp N2  &kp N3     &kp BSLH                        &none   &dtnum      &dtnav     &none     &none
-                             &kp QMARK  &kp N0     &kp MINUS    &trans  &trans  &trans
+  &kp EXCL   &kp N7  &kp N8  &kp N9    &kp PLUS                        &none   &dtbase     &dtextra   &dttap    &dtboot
+  &kp SQT    &kp N4  &kp N5  &kp N6    &kp EQUAL                       &none   &kp RSHIFT  &kp RCTRL  &kp RALT  &kp RGUI
+  &kp GRAVE  &kp N1  &kp N2  &kp N3    &kp N0                          &none   &dtnum      &dtnav     &none     &none
+                             &kp BSLH  &kp SLASH  &kp MINUS    &trans  &trans  &trans
             >;
         };
 
@@ -573,8 +573,8 @@
             bindings = <
   &en HASH   &en LBRC  &en STAR   &en RBRC  &en CARET                          &kp LS(RU_CYRILLIC_IO)  &dtbase    &dtextra   &dttap    &dtboot
   &en DQT    &en LBKT  &en PRCNT  &en RBKT  &en AT                             &kp RU_NUMERO           &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI
-  &en TILDE  &en LPAR  &en DLLR   &en RPAR  &en PIPE                           &kp RU_SLASH            &dtrusym   &dtmouse   &none     &none
-                                  &en AMPS  &en SLASH  &kp RU_UNDER    &trans  &trans                  &trans
+  &en TILDE  &en LPAR  &en DLLR   &en RPAR  &en AMPS                           &kp RU_SLASH            &dtrusym   &dtmouse   &none     &none
+                                  &en PIPE  &en QMARK  &kp RU_UNDER    &trans  &trans                  &trans
             >;
         };
 
@@ -582,8 +582,8 @@
             bindings = <
   &en EXCL   &kp RU_N7  &kp RU_N8  &kp RU_N9  &en PLUS                           &kp RU_CYRILLIC_IO  &dtbase    &dtextra   &dttap    &dtboot
   &en SQT    &kp RU_N4  &kp RU_N5  &kp RU_N6  &en EQUAL                          &kp RU_DQT          &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI
-  &en GRAVE  &kp RU_N1  &kp RU_N2  &kp RU_N3  &en BSLH                           &kp RU_BSLH         &dtrunum   &dtnav     &none     &none
-                                   &en QMARK  &kp RU_N0  &kp RU_MINUS    &trans  &trans              &trans
+  &en GRAVE  &kp RU_N1  &kp RU_N2  &kp RU_N3  &kp N0                             &kp RU_BSLH         &dtrunum   &dtnav     &none     &none
+                                   &en BSLH   &en SLASH  &kp RU_MINUS    &trans  &trans              &trans
             >;
         };
     };
