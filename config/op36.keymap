@@ -545,8 +545,8 @@
         Sym {
             bindings = <
   &kp HASH   &kp LBRC  &kp STAR   &kp RBRC  &kp CARET                       &none   &dtbase    &dtextra   &dttap    &dtboot
-  &kp DQT    &kp LBKT  &kp PRCNT  &kp RBKT  &kp AMPS                        &none   &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI
-  &kp TILDE  &kp LPAR  &kp DLLR   &kp RPAR  &kp AT                          &none   &dtsym     &dtmouse   &none     &none
+  &kp DQT    &kp LPAR  &kp PRCNT  &kp RPAR  &kp AMPS                        &none   &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI
+  &kp TILDE  &kp LBKT  &kp DLLR   &kp RBKT  &kp AT                          &none   &dtsym     &dtmouse   &none     &none
                                   &kp PIPE  &kp QMARK  &kp UNDER    &trans  &trans  &trans
             >;
         };
@@ -572,8 +572,8 @@
         ruSym {
             bindings = <
   &en HASH   &en LBRC  &en STAR   &en RBRC  &en CARET                          &kp LS(RU_CYRILLIC_IO)  &dtbase    &dtextra   &dttap    &dtboot
-  &en DQT    &en LBKT  &en PRCNT  &en RBKT  &en AMPS                           &kp RU_NUMERO           &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI
-  &en TILDE  &en LPAR  &en DLLR   &en RPAR  &en AT                             &kp RU_SLASH            &dtrusym   &dtmouse   &none     &none
+  &en DQT    &en LPAR  &en PRCNT  &en RPAR  &en AMPS                           &kp RU_NUMERO           &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI
+  &en TILDE  &en LBKT  &en DLLR   &en RBKT  &en AT                             &kp RU_SLASH            &dtrusym   &dtmouse   &none     &none
                                   &en PIPE  &en QMARK  &kp RU_UNDER    &trans  &trans                  &trans
             >;
         };
