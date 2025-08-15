@@ -553,9 +553,9 @@
 
         Num {
             bindings = <
-  &kp EXCL   &kp N7  &kp N8  &kp N9    &kp N0                          &none   &dtbase     &dtextra   &dttap    &dtboot
+  &kp EXCL   &kp N7  &kp N8  &kp N9    &kp PLUS                        &none   &dtbase     &dtextra   &dttap    &dtboot
   &kp SQT    &kp N4  &kp N5  &kp N6    &kp EQUAL                       &none   &kp RSHIFT  &kp RCTRL  &kp RALT  &kp RGUI
-  &kp GRAVE  &kp N1  &kp N2  &kp N3    &kp PLUS                        &none   &dtnum      &dtnav     &none     &none
+  &kp GRAVE  &kp N1  &kp N2  &kp N3    &kp N0                          &none   &dtnum      &dtnav     &none     &none
                              &kp BSLH  &kp SLASH  &kp MINUS    &trans  &trans  &trans
             >;
         };
@@ -580,9 +580,9 @@
 
         ruNum {
             bindings = <
-  &en EXCL   &kp RU_N7  &kp RU_N8  &kp RU_N9  &kp N0                             &kp RU_CYRILLIC_IO  &dtbase    &dtextra   &dttap    &dtboot
+  &en EXCL   &kp RU_N7  &kp RU_N8  &kp RU_N9  &en PLUS                           &kp RU_CYRILLIC_IO  &dtbase    &dtextra   &dttap    &dtboot
   &en SQT    &kp RU_N4  &kp RU_N5  &kp RU_N6  &en EQUAL                          &kp RU_DQT          &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI
-  &en GRAVE  &kp RU_N1  &kp RU_N2  &kp RU_N3  &en PLUS                           &kp RU_BSLH         &dtrunum   &dtnav     &none     &none
+  &en GRAVE  &kp RU_N1  &kp RU_N2  &kp RU_N3  &kp N0                             &kp RU_BSLH         &dtrunum   &dtnav     &none     &none
                                    &en BSLH   &en SLASH  &kp RU_MINUS    &trans  &trans              &trans
             >;
         };
