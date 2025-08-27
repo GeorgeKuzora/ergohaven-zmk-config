@@ -258,6 +258,13 @@
             tapping-term-ms = <200>;
             require-prior-idle-ms = <100>;
         };
+
+        dtbtclr: dtbtclr {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DTBTCLR";
+            #binding-cells = <0>;
+            bindings = <&none>, <&bt BT_CLR>;
+        };
     };
 
     combos {
@@ -587,7 +594,7 @@
 
         Media {
             bindings = <
-  &dtboot   &dttap    &dtextra   &dtbase    &none                         &bt BT_CLR    &bot          &dt_soft_off  &studio_unlock  &kp F15
+  &dtboot   &dttap    &dtextra   &dtbase    &none                         &dtbtclr      &bot          &dt_soft_off  &studio_unlock  &kp F15
   &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none                         &kp C_PREV    &kp C_VOL_DN  &kp C_VOL_UP  &kp C_NEXT      &kp F16
   &none     &none     &dtfun     &dtmedia   &none                         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &kp F14
                                  &trans     &trans  &trans    &kp C_STOP  &kp C_PP      &kp C_MUTE
