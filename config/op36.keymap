@@ -554,6 +554,8 @@
   &lt 4 Z       &kp X        &kp C         &kp V         &kp B                                  &kp N       &kp M         &kp COMMA     &kp DOT      &lt 4 FSLH
                                            &lt 5 ESC     &lt 6 SPACE  &lt 7 TAB    &lt 8 ENTER  &lt 9 BSPC  &lt 10 DEL
             >;
+
+            display-name = "Base";
         };
 
         Extra {
@@ -563,6 +565,8 @@
   &lt 4 Q       &kp X        &kp M         &kp C         &kp V                                  &kp K       &kp P         &gdot         &gminus      &gbutton_gslash 4 0
                                            &lt 5 ESC     &lt 6 SPACE  &lt 7 TAB    &lt 8 ENTER  &lt 9 BSPC  &lt 10 DEL
             >;
+
+            display-name = "Navigation";
         };
 
         Tap {
@@ -572,6 +576,8 @@
   &kp Z  &kp X  &kp C  &kp V      &kp B                                  &kp N       &kp M       &kp COMMA  &kp DOT  &kp FSLH
                        &lt 5 ESC  &lt 6 SPACE  &lt 7 TAB    &lt 8 ENTER  &lt 9 BSPC  &lt 10 DEL
             >;
+
+            display-name = "Symbols";
         };
 
         Rus {
@@ -662,6 +668,8 @@
   &en GRAVE  &kp N7  &kp N8  &kp N6  &en CARET                          &kp RU_BSLH         &dtrunum   &dtnav     &none     &none
                              &kp N9  &en SLASH  &kp RU_MINUS    &trans  &trans              &trans
             >;
+
+            display-name = "Adjust";
         };
     };
 };
