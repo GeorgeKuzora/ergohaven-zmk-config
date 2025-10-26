@@ -645,9 +645,9 @@
 
         Fun {
             bindings = <
-  &kp F12  &kp F7  &kp F8  &kp F9      &kp PSCRN                     &none   &dtbase    &dtextra   &dttap    &dtboot
-  &kp F11  &kp F4  &kp F5  &kp F6      &kp CAPS                      &none   &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI
-  &kp F10  &kp F1  &kp F2  &kp F3      &kp INS                       &none   &dtfun     &dtmedia   &none     &none
+  &kp F12  &kp F4  &kp F5  &kp F6      &kp PSCRN                     &none   &dtbase    &dtextra   &dttap    &dtboot
+  &kp F11  &kp F1  &kp F2  &kp F3      &kp CAPS                      &none   &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI
+  &kp F10  &kp F7  &kp F8  &kp F9      &kp INS                       &none   &dtfun     &dtmedia   &none     &none
                            &kp K_MENU  &kp SPACE  &kp TAB    &trans  &trans  &trans
             >;
         };
