@@ -398,28 +398,28 @@
 
         combo_bslh_sym {
             bindings = <&kp BSLH>;
-            key-positions = <2 3>;
+            key-positions = <2 1>;
             timeout-ms = <100>;
             layers = <8>;
         };
 
         combo_bslh_rus_sym {
             bindings = <&en BSLH>;
-            key-positions = <2 3>;
+            key-positions = <2 1>;
             timeout-ms = <100>;
             layers = <11>;
         };
 
         combo_amps_sym {
             bindings = <&kp AMPS>;
-            key-positions = <1 2>;
+            key-positions = <2 3>;
             timeout-ms = <100>;
             layers = <8>;
         };
 
         combo_amps_rus_sym {
             bindings = <&en AMPS>;
-            key-positions = <1 2>;
+            key-positions = <2 3>;
             timeout-ms = <100>;
             layers = <11>;
         };
