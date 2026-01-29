@@ -636,18 +636,18 @@
 
         Num {
             bindings = <
-  &kp N0     &kp N4  &kp N5  &kp N6    &kp PLUS                        &none   &dtbase     &dtextra   &dttap    &dtboot
-  &kp SQT    &kp N1  &kp N2  &kp N3    &kp EQUAL                       &none   &kp RSHIFT  &kp RCTRL  &kp RALT  &kp RGUI
-  &kp GRAVE  &kp N7  &kp N8  &kp N9    &kp CARET                       &none   &dtnum      &dtnav     &none     &none
+  &kp N0     &kp N7  &kp N8  &kp N9    &kp PLUS                        &none   &dtbase     &dtextra   &dttap    &dtboot
+  &kp SQT    &kp N4  &kp N5  &kp N6    &kp EQUAL                       &none   &kp RSHIFT  &kp RCTRL  &kp RALT  &kp RGUI
+  &kp GRAVE  &kp N1  &kp N2  &kp N3    &kp CARET                       &none   &dtnum      &dtnav     &none     &none
                              &kp EXCL  &kp SLASH  &kp MINUS    &trans  &trans  &trans
             >;
         };
 
         Fun {
             bindings = <
-  &kp F12  &kp F4  &kp F5  &kp F6      &kp PSCRN                     &none   &dtbase    &dtextra   &dttap    &dtboot
-  &kp F11  &kp F1  &kp F2  &kp F3      &kp CAPS                      &none   &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI
-  &kp F10  &kp F7  &kp F8  &kp F9      &kp INS                       &none   &dtfun     &dtmedia   &none     &none
+  &kp F12  &kp F7  &kp F8  &kp F9      &kp PSCRN                     &none   &dtbase    &dtextra   &dttap    &dtboot
+  &kp F11  &kp F4  &kp F5  &kp F6      &kp CAPS                      &none   &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI
+  &kp F10  &kp F1  &kp F2  &kp F3      &kp INS                       &none   &dtfun     &dtmedia   &none     &none
                            &kp K_MENU  &kp SPACE  &kp TAB    &trans  &trans  &trans
             >;
         };
@@ -663,9 +663,9 @@
 
         ruNum {
             bindings = <
-  &kp N0     &kp N4  &kp N5  &kp N6    &en PLUS                           &kp RU_CYRILLIC_IO  &dtbase    &dtextra   &dttap    &dtboot
-  &en SQT    &kp N1  &kp N2  &kp N3    &en EQUAL                          &kp RU_DQT          &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI
-  &en GRAVE  &kp N7  &kp N8  &kp N9    &en CARET                          &kp RU_BSLH         &dtrunum   &dtnav     &none     &none
+  &kp N0     &kp N7  &kp N8  &kp N9    &en PLUS                           &kp RU_CYRILLIC_IO  &dtbase    &dtextra   &dttap    &dtboot
+  &en SQT    &kp N4  &kp N5  &kp N6    &en EQUAL                          &kp RU_DQT          &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI
+  &en GRAVE  &kp N1  &kp N2  &kp N3    &en CARET                          &kp RU_BSLH         &dtrunum   &dtnav     &none     &none
                              &en EXCL  &en SLASH  &kp RU_MINUS    &trans  &trans              &trans
             >;
 
