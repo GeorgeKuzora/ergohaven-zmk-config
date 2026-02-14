@@ -547,11 +547,11 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kp LS(LC(Z))>,
-                <&macro_wait_time 5>,
+                <&en LS(LC(Z))>,
+                <&macro_wait_time 10>,
                 <&kp LS(LC(RBKT))>,
-                <&macro_wait_time 5>,
-                <&kp LS(LC(Z))>;
+                <&macro_wait_time 10>,
+                <&en LS(LC(Z))>;
 
             label = "TERM_NEXT_SPLIT";
         };
@@ -560,11 +560,11 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kp LS(LC(Z))>,
-                <&macro_wait_time 5>,
+                <&en LS(LC(Z))>,
+                <&macro_wait_time 10>,
                 <&kp LS(LC(LBKT))>,
-                <&macro_wait_time 5>,
-                <&kp LS(LC(Z))>;
+                <&macro_wait_time 10>,
+                <&en LS(LC(Z))>;
 
             label = "TERM_PREV_SPLIT";
         };
