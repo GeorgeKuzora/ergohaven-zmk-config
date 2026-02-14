@@ -546,14 +546,26 @@
         term_next_split: term_next_split {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LC(Z)) &kp LS(LC(RBKT)) &kp LS(LC(Z))>;
+            bindings =
+                <&kp LS(LC(Z))>,
+                <&macro_wait_time 5>,
+                <&kp LS(LC(RBKT))>,
+                <&macro_wait_time 5>,
+                <&kp LS(LC(Z))>;
+
             label = "TERM_NEXT_SPLIT";
         };
 
         term_prev_split: term_prev_split {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LC(Z)) &kp LS(LC(LBKT)) &kp LS(LC(Z))>;
+            bindings =
+                <&kp LS(LC(Z))>,
+                <&macro_wait_time 5>,
+                <&kp LS(LC(LBKT))>,
+                <&macro_wait_time 5>,
+                <&kp LS(LC(Z))>;
+
             label = "TERM_PREV_SPLIT";
         };
     };
