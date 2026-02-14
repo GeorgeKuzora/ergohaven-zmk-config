@@ -604,8 +604,8 @@
         Nav {
             bindings = <
   &dtboot   &dttap    &dtextra   &dtbase     &none                        &kp K_AGAIN  &kp K_PASTE    &kp K_COPY   &kp K_CUT  &kp K_UNDO
-  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHIFT  &none                        &kp LEFT     &kp DOWN       &kp UP       &kp RIGHT  &toggle_ru
-  &none     &none     &dtnum     &dtnav      &none                        &kp HOME     &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &kp LG(SPACE)
+  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHIFT  &none                        &kp LEFT     &kp DOWN       &kp UP       &kp RIGHT  &layer_en
+  &none     &none     &dtnum     &dtnav      &none                        &kp HOME     &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &layer_ru
                                  &trans      &trans  &trans    &kp ENTER  &kp BSPC     &kp DEL
             >;
         };
@@ -613,8 +613,8 @@
         Mouse {
             bindings = <
   &dtboot   &dttap    &dtextra   &dtbase     &none                       &kp K_AGAIN     &kp K_PASTE     &kp K_COPY    &kp K_CUT        &kp K_UNDO
-  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHIFT  &none                       &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &layer_en
-  &none     &none     &dtsym     &dtmouse    &none                       &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &layer_ru
+  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHIFT  &none                       &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &kp LG(SPACE)
+  &none     &none     &dtsym     &dtmouse    &none                       &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &toggle_ru
                                  &trans      &trans  &trans    &mkp MB2  &mkp MB1        &mkp MB3
             >;
         };
