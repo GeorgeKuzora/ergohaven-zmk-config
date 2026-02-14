@@ -546,22 +546,14 @@
         term_next_split: term_next_split {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&kp LS(LC(RBKT))>,
-                <&macro_wait_time 10>,
-                <&kp LS(LC(Z))>;
-
+            bindings = <&kp LS(LC(Z)) &kp LS(LC(RBKT)) &kp LS(LC(Z))>;
             label = "TERM_NEXT_SPLIT";
         };
 
         term_prev_split: term_prev_split {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&kp LS(LC(LBKT))>,
-                <&macro_wait_time 10>,
-                <&kp LS(LC(Z))>;
-
+            bindings = <&kp LS(LC(Z)) &kp LS(LC(LBKT)) &kp LS(LC(Z))>;
             label = "TERM_PREV_SPLIT";
         };
     };
@@ -616,9 +608,9 @@
 
         Media {
             bindings = <
-  &dtboot   &dttap    &dtextra   &dtbase    &none                         &dtbtclr      &bot          &dt_soft_off  &studio_unlock  &kp F15
-  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none                         &kp C_PREV    &kp C_VOL_DN  &kp C_VOL_UP  &kp C_NEXT      &kp F16
-  &none     &none     &dtfun     &dtmedia   &none                         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &kp F14
+  &dtboot   &dttap    &dtextra   &dtbase    &none                         &dtbtclr      &bot          &dt_soft_off  &studio_unlock  &kp LS(LG(V))
+  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none                         &kp C_PREV    &kp C_VOL_DN  &kp C_VOL_UP  &kp C_NEXT      &kp LS(LA(LC(LG(V))))
+  &none     &none     &dtfun     &dtmedia   &none                         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &toggle_ru
                                  &trans     &trans  &trans    &kp C_STOP  &kp C_PP      &kp C_MUTE
             >;
         };
