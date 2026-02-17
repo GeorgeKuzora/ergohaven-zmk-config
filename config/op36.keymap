@@ -542,28 +542,6 @@
             bindings = <&tog 3 &kp LA(SPACE)>;
             label = "TOGGLE_RU";
         };
-
-        term_next_split: term_next_split {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&kp LS(LC(RBKT))>,
-                <&macro_wait_time 50>,
-                <&kp LS(LC(Z))>;
-
-            label = "TERM_NEXT_SPLIT";
-        };
-
-        term_prev_split: term_prev_split {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&kp LS(LC(LBKT))>,
-                <&macro_wait_time 50>,
-                <&kp LS(LC(Z))>;
-
-            label = "TERM_PREV_SPLIT";
-        };
     };
 
     keymap {
@@ -635,8 +613,8 @@
         Mouse {
             bindings = <
   &dtboot   &dttap    &dtextra   &dtbase     &none                       &kp K_AGAIN     &kp K_PASTE     &kp K_COPY    &kp K_CUT        &kp K_UNDO
-  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHIFT  &none                       &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &term_next_split
-  &none     &none     &dtsym     &dtmouse    &none                       &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &term_prev_split
+  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHIFT  &none                       &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &kp LS(LA(LC(LG(C))))
+  &none     &none     &dtsym     &dtmouse    &none                       &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &kp LS(LC(LA(LG(X))))
                                  &trans      &trans  &trans    &mkp MB2  &mkp MB1        &mkp MB3
             >;
         };
