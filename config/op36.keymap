@@ -621,18 +621,18 @@
 
         Sym {
             bindings = <
-  &kp HASH   &kp LBRC  &kp STAR   &kp RBRC  &kp AMPS                        &none   &dtbase    &dtextra   &dttap    &dtboot
+  &kp TILDE  &kp LBRC  &kp STAR   &kp RBRC  &kp AMPS                        &none   &dtbase    &dtextra   &dttap    &dtboot
   &kp DQT    &kp LPAR  &kp PRCNT  &kp RPAR  &kp PIPE                        &none   &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI
-  &kp TILDE  &kp LBKT  &kp AT     &kp RBKT  &kp BSLH                        &none   &dtsym     &dtmouse   &none     &none
+  &kp HASH   &kp LBKT  &kp AT     &kp RBKT  &kp BSLH                        &none   &dtsym     &dtmouse   &none     &none
                                   &kp DLLR  &kp QMARK  &kp UNDER    &trans  &trans  &trans
             >;
         };
 
         Num {
             bindings = <
-  &kp N0     &kp N7  &kp N8  &kp N9    &kp PLUS                        &none   &dtbase     &dtextra   &dttap    &dtboot
+  &kp GRAVE  &kp N7  &kp N8  &kp N9    &kp PLUS                        &none   &dtbase     &dtextra   &dttap    &dtboot
   &kp SQT    &kp N4  &kp N5  &kp N6    &kp EQUAL                       &none   &kp RSHIFT  &kp RCTRL  &kp RALT  &kp RGUI
-  &kp GRAVE  &kp N1  &kp N2  &kp N3    &kp CARET                       &none   &dtnum      &dtnav     &none     &none
+  &kp N0     &kp N1  &kp N2  &kp N3    &kp CARET                       &none   &dtnum      &dtnav     &none     &none
                              &kp EXCL  &kp SLASH  &kp MINUS    &trans  &trans  &trans
             >;
         };
@@ -648,18 +648,18 @@
 
         ruSym {
             bindings = <
-  &en HASH   &en LBRC  &en STAR   &en RBRC  &en AMPS                           &kp LS(RU_CYRILLIC_IO)  &dtbase    &dtextra   &dttap    &dtboot
+  &en TILDE  &en LBRC  &en STAR   &en RBRC  &en AMPS                           &kp LS(RU_CYRILLIC_IO)  &dtbase    &dtextra   &dttap    &dtboot
   &en DQT    &en LPAR  &en PRCNT  &en RPAR  &en PIPE                           &kp RU_NUMERO           &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI
-  &en TILDE  &en LBKT  &en AT     &en RBKT  &en BSLH                           &kp RU_SLASH            &dtrusym   &dtmouse   &none     &none
+  &en HASH   &en LBKT  &en AT     &en RBKT  &en BSLH                           &kp RU_SLASH            &dtrusym   &dtmouse   &none     &none
                                   &en DLLR  &en QMARK  &kp RU_UNDER    &trans  &trans                  &trans
             >;
         };
 
         ruNum {
             bindings = <
-  &kp N0     &kp N7  &kp N8  &kp N9    &en PLUS                           &kp RU_CYRILLIC_IO  &dtbase    &dtextra   &dttap    &dtboot
+  &en GRAVE  &kp N7  &kp N8  &kp N9    &en PLUS                           &kp RU_CYRILLIC_IO  &dtbase    &dtextra   &dttap    &dtboot
   &en SQT    &kp N4  &kp N5  &kp N6    &en EQUAL                          &kp RU_DQT          &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI
-  &en GRAVE  &kp N1  &kp N2  &kp N3    &en CARET                          &kp RU_BSLH         &dtrunum   &dtnav     &none     &none
+  &kp N0     &kp N1  &kp N2  &kp N3    &en CARET                          &kp RU_BSLH         &dtrunum   &dtnav     &none     &none
                              &en EXCL  &en SLASH  &kp RU_MINUS    &trans  &trans              &trans
             >;
         };
